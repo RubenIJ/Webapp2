@@ -10,6 +10,6 @@
 </head>
 <body>
 <?php require_once("frontend/header.php") ?>
-rww3rw3rw3
+
 </body>
 </html>
