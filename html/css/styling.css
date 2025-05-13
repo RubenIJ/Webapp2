@@ -1,0 +1,174 @@
+/* Algemene body-styling */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f7fb;
+    color: #062683;
+}
+
+/* Header */
+header {
+    background-color: #A3CEF1;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+    height: 100px;
+}
+
+.logo img {
+    height: 60px;
+    transition: transform 0.3s ease;
+}
+
+.logo img:hover {
+    transform: scale(1.1);
+}
+
+/* Navigatie links */
+.links {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.links a {
+    text-decoration: none;
+    color: #062683;
+    font-weight: 600;
+    font-size: 1rem;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.links a::after {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    left: 0;
+    bottom: -3px;
+    background-color: #062683;
+    transition: 0.3s ease;
+}
+
+.links a:hover {
+    color: #0456a0;
+}
+
+.links a:hover::after {
+    width: 100%;
+}
+
+/* Login/registreer knoppen */
+.login-links {
+    display: flex;
+    gap: 15px;
+}
+
+.login-links a {
+    text-decoration: none;
+    background-color: #fff;
+    color: #062683;
+    padding: 8px 16px;
+    border-radius: 30px;
+    font-weight: 600;
+    border: 2px solid #062683;
+    transition: all 0.3s ease;
+}
+
+.login-links a:hover {
+    background-color: #062683;
+    color: #fff;
+}
+
+/* Footer */
+.footer {
+    background-color: #A3CEF1;
+    color: #062683;
+    padding: 40px 0;
+    margin-top: 60px;
+    width: 1500px;
+
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 40px;
+    padding: 0 20px;
+}
+
+.footer-section {
+    flex: 1 1 250px;
+}
+
+.footer-section h4 {
+    font-size: 1.3em;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.footer-section h4::after {
+    content: '';
+    position: absolute;
+    width: 40px;
+    height: 2px;
+    background-color: #062683;
+    bottom: -6px;
+    left: 0;
+}
+
+.footer-section a {
+    text-decoration: none;
+    color: #062683;
+    display: block;
+    margin: 8px 0;
+    transition: color 0.3s ease;
+}
+
+.footer-section a:hover {
+    color: #000;
+}
+
+/* Social media iconen */
+.social-icons {
+    display: flex;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.social-icons i {
+    font-size: 22px;
+    color: #062683;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.social-icons i:hover {
+    background-color: #062683;
+    color: #fff;
+}
+
+/* Voor demo-blok */
+.bigboy {
+    width: 100%;
+    height: 800px;
+    background-color: red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+}
