@@ -36,7 +36,19 @@ error_reporting(E_ALL);
 <div class="index-foto">
     <img src="fotos/image%205.png" alt="">
 </div>
+<div class="index-form">
+    <div class="index-formsearch">
+        <form action="">
+            <input type="text" placeholder="Waar wil je naartoe?">
+            <input type="text" placeholder="Wanneer vertrek je?">
+            <input type="text" placeholder="Aantal personen">
+            <button type="submit">Zoeken</button>
+        </form>
+    </div></div>
 
+<div class="index-">
+
+</div>
 <footer>
     <?php require_once("components/footer.php") ?>
 
