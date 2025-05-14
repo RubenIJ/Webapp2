@@ -14,14 +14,33 @@ error_reporting(E_ALL);
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <title>Hoofdpagina</title>
     <link rel="stylesheet" href="css/styling.css">
+
 </head>
 <body>
+<header>
+    <nav class="nav">
+        <div class="links">
+            <div class="logo">
+                <img src="../fotos/logo.png" alt="Logo">
+            </div>
+            <a href="../extra%20pagina's/ons%20aanbod.php">Ons Aanbod</a>
+            <a href="../extra%20pagina's/last%20minute.php">Last Minute</a>
+            <a href="../extra%20pagina's/vragen%20en%20contact.php">Vragen & Contact</a>
+        </div>
+        <div class="login-links">
+            <a href="../login/login-pagina.php">Login</a>
+            <a href="../login/registreer.php">Registreer</a>
+        </div>
+    </nav>
+</header>
+<div class="index-foto">
+    <img src="fotos/image%205.png" alt="">
+</div>
 
-<?php require_once("frontend/header.php"); ?>
+<footer>
+    <?php require_once("components/footer.php") ?>
 
-<div class="bigboy">Bigboy is zichtbaar!</div>
-
-<?php require_once("frontend/footer.php"); ?>
+</footer>
 
 </body>
 </html>

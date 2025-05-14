@@ -2,7 +2,7 @@
     <nav class="nav">
         <div class="links">
             <div class="logo">
-                <img src="../fotos/logo.png" alt="Logo">
+                <a href="../index.php"><img src="../fotos/logo.png" alt="Logo"></a>
             </div>
             <a href="../extra%20pagina's/ons%20aanbod.php">Ons Aanbod</a>
             <a href="../extra%20pagina's/last%20minute.php">Last Minute</a>
