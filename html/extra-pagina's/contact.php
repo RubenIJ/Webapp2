@@ -23,7 +23,6 @@
 </main>
 <footer>
     <?php require_once("../components/footer.php") ?>
-hallo
 </footer>
 </body>
 </html>
