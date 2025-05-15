@@ -9,6 +9,9 @@
     <title>Familie pagina</title>
 </head>
 <body>
+<div class="naamgeving">
+    <h1>Familie vakanties</h1>
+</div>
 <div class="vakanties">
 <div class="vakantie-blok">
     <div class="vakantie-inhoud">
@@ -32,8 +35,8 @@
             <h1>Aparthotel Adagio Rome Vatican</h1>
             <h2>
                 Bij Aparthotel Adagio Rome Vatican, net buiten het centrum van de Italiaanse stad Rome, zit je goed.</h2>
-            <p>Aparthotel Adagio Rome Vatican ligt in de wijk Balduina, ten noordwesten van het historische centrum van Rome.
-                In de directe omgeving zijn verschillende restaurants te vinden.</p>
+            <p>Aparthotel Adagio Rome Vatican ligt in de wijk Balduina, ten noordwesten van het historische centrum van Rome.</p>
+            <p>In de directe omgeving zijn verschillende restaurants te vinden.</p>
             <a href="https://www.d-reizen.nl/vakantie/italie/rome/rome/aparthotel-adagio-rome-vatican" class="meer-info">meer informatie</a>
         </div>
         <div class="vakantie-fotos">
@@ -45,9 +48,10 @@
     <div class="vakantie-blok">
         <div class="vakantie-inhoud">
             <h1>AP Cabanas Beach & Nature</h1>
-            <h2>Op zoek naar een luxe uitvalbasis in de Portugese Algarve? AP Cabanas Beach & Nature beschikt over o.a. een dakterras met zwembad, fitnessruimte en wellnesscentrum.</h2>
-            <p>AP Cabanas Beach & Nature beschikt over meerdere zwembaden, waaronder één op het dakterras.
-            Het uitzicht is hier prachtig! Neem een duik en relax vervolgens op een ligbedje.</p>
+            <h2>Op zoek naar een luxe uitvalbasis in de Portugese Algarve?
+                AP Cabanas Beach & Nature beschikt over o.a. een dakterras met zwembad, fitnessruimte en wellnesscentrum.</h2>
+            <p>AP Cabanas Beach & Nature beschikt over meerdere zwembaden, waaronder één op het dakterras.</p>
+            <p>Het uitzicht is hier prachtig! Neem een duik en relax vervolgens op een ligbedje.</p>
             <a href="https://www.tui.nl/ap-cabanas-beach-en-nature-509766365/" class="meer-info">meer informatie</a>
         </div>
         <div class="vakantie-fotos">
