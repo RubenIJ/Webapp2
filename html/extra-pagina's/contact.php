@@ -30,5 +30,6 @@
 <footer>
     <?php require_once("../components/footer.php") ?>
 </footer>
+<!-- test -->
 </body>
 </html>
