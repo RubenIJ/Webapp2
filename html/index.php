@@ -17,24 +17,11 @@ error_reporting(E_ALL);
 
 </head>
 <body>
-<header>
-    <nav class="nav">
-        <div class="links">
-            <div class="logo">
-                <img src="../fotos/logo.png" alt="Logo">
-            </div>
-            <a href="../extra%20pagina's/ons%20aanbod.php">Ons Aanbod</a>
-            <a href="../extra%20pagina's/last%20minute.php">Last Minute</a>
-            <a href="../extra%20pagina's/vragen%20en%20contact.php">Vragen & Contact</a>
-        </div>
-        <div class="login-links">
-            <a href="../login/login-pagina.php">Login</a>
-            <a href="../login/registreer.php">Registreer</a>
-        </div>
-    </nav>
+<header><?php require_once("components/header.php") ?>
 </header>
+
 <div class="index-foto">
-    <img src="fotos/image%205.png" alt="">
+    <img src="fotos/indo.png" alt="">
 </div>
 <div class="index-form">
     <div class="index-formsearch">
@@ -45,9 +32,44 @@ error_reporting(E_ALL);
             <button type="submit">Zoeken</button>
         </form>
     </div></div>
+<div class="index-indeling">
+    <div class="index-indeling-blok">
+        <div class="index-image-overlay">
+            <img src="fotos/familie-foto.png" alt="Familievakantie">
+            <div class="index-overlay-text">
+                <h2>Beste Familie Vakanties</h2>
+            </div>
+        </div>
+    </div>
 
-<div class="index-">
+    <div class="index-indeling-blok">
+        <div class="index-image-overlay">
+            <img src="fotos/all-inclusive-foto.jpg" alt="All Inclusive">
+            <div class="index-overlay-text">
+                <h2>All Inclusive</h2>
+            </div>
+        </div>
+    </div>
+</div>
 
+<div class="index-populaire-locaties-indeling">
+<div class="index-bigboy3">
+    <h2>Populaire Locaties</h2>
+    <div class="locatie-container">
+        <div class="locatie-card">
+            <img src="fotos/parijs.jpeg" alt="Frankrijk">
+            <div class="locatie-overlay">Frankrijk</div>
+        </div>
+        <div class="locatie-card">
+            <img src="fotos/barcelona.jpg" alt="Spanje">
+            <div class="locatie-overlay">Spanje</div>
+        </div>
+        <div class="locatie-card">
+            <img src="fotos/noordpool.jpg" alt="Noordpool">
+            <div class="locatie-overlay">Noordpool</div>
+        </div>
+    </div>
+</div>
 </div>
 <footer>
     <?php require_once("components/footer.php") ?>
