@@ -1,6 +1,13 @@
 body {
+    margin: auto;
     background-color: #ffffff;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.naamgeving {
+    color: #062683;
+    display: flex;
+    justify-content: center;
 }
 
 .vakanties {
@@ -22,6 +29,10 @@ body {
 .vakantie-inhoud {
     flex: 1;
     gap: 10px;
+}
+
+p {
+    margin: 0;
 }
 
 .meer-info {
