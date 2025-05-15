@@ -14,27 +14,3 @@
         </div>
     </nav>
 </header>
-
-<!--<script>   const nav = document.querySelector("nav");-->
-<!--    const body = document.body;-->
-<!---->
-<!--    function updateNavVisibility() {-->
-<!--        if (window.scrollY === 0) {-->
-<!--            body.classList.add("show-nav");-->
-<!--            nav.classList.remove("fixed");-->
-<!--        } else {-->
-<!--            body.classList.remove("show-nav");-->
-<!--            nav.classList.add("fixed");-->
-<!--        }-->
-<!--    }-->
-<!---->
-<!--    window.addEventListener("scroll", updateNavVisibility);-->
-<!--    window.addEventListener("load", updateNavVisibility); // <-- deze regel zorgt dat het ook bij laden werkt-->
-<!--</script>-->
-<?php
-//                if (isset($_SESSION['username'])) {
-//                    echo $_SESSION['username'];
-//                } else {
-//                    echo "Guest";
-//                }
-//                ?><!--</p>

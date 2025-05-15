@@ -11,8 +11,11 @@
     <title>Contact</title>
 </head>
 <body>
+<header>
+    <?php require_once("../components/header.php") ?>
+</header>
 <main>
-    <p>Stuur ons een E-Mail als je vragen hebt :3</p>
+    <p>Stuur ons een E-Mail als je nog vragen hebt</p>
     <form class="contact-form" action="contact.php" method="post">
         <input type="text" name="name" placeholder="Naam">
         <input type="text" name="mail" placeholder="Jouw mail">
