@@ -5,7 +5,7 @@
             <a href="#"><p>FAQ</p></a>
             <a href="#"><p>Reis Informatie</p></a>
             <a href="#"><p>Ons Beleid</p></a>
-            <a href="#"><p>Contact</p></a>
+            <a href="../extra-pagina's/contact.php"><p>Contact</p></a>
         </div>
 
         <div class="footer-section">
