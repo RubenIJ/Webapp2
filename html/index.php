@@ -14,6 +14,9 @@ error_reporting(E_ALL);
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <title>Hoofdpagina</title>
     <link rel="stylesheet" href="css/styling.css">
+    <link rel="stylesheet" href="css/xing.css">
+    <link rel="stylesheet" href="css/ruben.css">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
 
 </head>
 <body>
@@ -36,18 +39,18 @@ error_reporting(E_ALL);
     <div class="index-indeling-blok">
         <div class="index-image-overlay">
             <img src="fotos/familie-foto.png" alt="Familievakantie">
-            <div class="index-overlay-text">
-                <h2>Beste Familie Vakanties</h2>
-            </div>
+            <a href="extra-pagina's/familie.php"><div class="index-overlay-text">
+                 <h2>Beste Familie Vakanties</h2>
+            </div></a>
         </div>
     </div>
 
     <div class="index-indeling-blok">
         <div class="index-image-overlay">
             <img src="fotos/all-inclusive-foto.jpg" alt="All Inclusive">
-            <div class="index-overlay-text">
-                <h2>All Inclusive</h2>
-            </div>
+            <a href="extra-pagina's/all-inclusive.php"> <div class="index-overlay-text">
+              <h2>All Inclusive</h2>
+            </div></a>
         </div>
     </div>
 </div>
@@ -58,15 +61,15 @@ error_reporting(E_ALL);
     <div class="locatie-container">
         <div class="locatie-card">
             <img src="fotos/parijs.jpeg" alt="Frankrijk">
-            <div class="locatie-overlay">Frankrijk</div>
-        </div>
+            <a href="extra-pagina's/filter%20locaties/frankrijk.php"><div class="locatie-overlay">Frankrijk</div></a>
+          </div>
         <div class="locatie-card">
             <img src="fotos/barcelona.jpg" alt="Spanje">
-            <div class="locatie-overlay">Spanje</div>
+            <a href="extra-pagina's/filter%20locaties/spanje.php"> <div class="locatie-overlay">Spanje</div></a>
         </div>
         <div class="locatie-card">
             <img src="fotos/noordpool.jpg" alt="Noordpool">
-            <div class="locatie-overlay">Noordpool</div>
+            <a href="extra-pagina's/filter%20locaties/noordpool.php"> <div class="locatie-overlay">Noordpool</div></a>
         </div>
     </div>
 </div>

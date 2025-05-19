@@ -278,13 +278,19 @@ header {
 .index-image-overlay:hover img {
     filter: brightness(60%);
 }
+.index-overlay-text a:visited  {
+    color: white;
+}
+.index-overlay-text a:link, a:hover{
+    text-decoration: none;
+    color: #062683;
+}
 
 .index-overlay-text {
     position: absolute;
     bottom: 0;
     width: 100%;
     background: rgba(6, 38, 131, 0.8);
-    color: white;
     padding: 10px 0;
     text-align: center;
     font-size: 20px;
@@ -353,4 +359,162 @@ header {
 .index-populaire-locaties-indeling{
     display: flex;
     justify-content: center;
+}
+
+/*login css*/
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding-top: 50px;
+}
+
+.login-box {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    width: 100%;
+    max-width: 400px;
+}
+
+.login-title {
+    margin: 0 0 30px 0;
+    text-align: center;
+    color: #062683;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.login-form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.login-form-group label {
+    margin-bottom: 5px;
+    color: #062683;
+    font-weight: bold;
+}
+
+.login-form-group input {
+    padding: 12px;
+    border: 2px solid #a3cef1;
+    border-radius: 10px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+.login-form-group input:focus {
+    border-color: #062683;
+    outline: none;
+}
+
+.login-button {
+    padding: 12px;
+    background-color: #062683;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.login-button:hover {
+    background-color: #0456a0;
+}
+
+.login-register-link {
+    text-align: center;
+    margin-top: 15px;
+    color: #062683;
+    font-size: 14px;
+}
+
+.login-register-link a {
+    color: #0456a0;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.login-register-link a:hover {
+    text-decoration: underline;
+}
+/* registreer css*/
+
+.registreer-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding-top: 50px;
+}
+
+.registreer-box {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    width: 100%;
+    max-width: 400px;
+}
+
+.registreer-box h2 {
+    margin: 0 0 30px 0;
+    text-align: center;
+    color: #062683;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.registreer-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.registreer-form input {
+    padding: 12px;
+    border: 2px solid #a3cef1;
+    border-radius: 10px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+.registreer-form input:focus {
+    border-color: #062683;
+    outline: none;
+}
+
+.registreer-form button {
+    padding: 12px;
+    background-color: #062683;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.registreer-form button:hover {
+    background-color: #0456a0;
+}
+
+.registreer-melding {
+    margin-top: 20px;
+    text-align: center;
+    color: #062683;
+    font-size: 14px;
 }
