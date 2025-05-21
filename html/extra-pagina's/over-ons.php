@@ -33,16 +33,14 @@
                 <div class="over-ons-ruimte">
                     <p>Omdat we begrijpen hoe belangrijk het is om zorgeloos op avontuur te gaan.</p>
                     <p>Veiligheid is voor ons essentieel, zodat jij je volledig kunt richten op het ontdekken van
-                        nieuwe
-                        plekken.</p>
+                        nieuwe plekken.</p>
                     <p>Tegelijkertijd zorgen we ervoor dat je kunt profiteren van de beste aanbiedingen,</p>
                     <p>zodat je kunt reizen zonder je zorgen te maken over je budget.</p>
                 </div>
                 <div class="over-ons-ruimte">
                     <p>Bij Vibevoyage maken we het plannen van jouw reis makkelijker dan ooit.</p>
                     <p>Met onze persoonlijke benadering zorgen we ervoor dat jouw reis perfect aansluit bij jouw wensen
-                        en
-                        verwachtingen.</p>
+                        en verwachtingen.</p>
                     <p>Of je nu op zoek bent naar een tropische bestemming of een gezellige stedentrip,</p>
                     <p>wij zorgen ervoor dat je altijd met een glimlach op reis gaat.</p>
                     <p>Vibevoyage maakt reizen veilig, voordelig en bovenal gemakkelijk!</p>
