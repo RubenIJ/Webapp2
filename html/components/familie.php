@@ -38,8 +38,7 @@
     <div class="vakantie-blok">
         <div class="vakantie-inhoud">
             <h1>Aparthotel Adagio Rome Vatican</h1>
-            <h2>
-                Bij Aparthotel Adagio Rome Vatican, net buiten het centrum van de Italiaanse stad Rome, zit je
+            <h2>Bij Aparthotel Adagio Rome Vatican, net buiten het centrum van de Italiaanse stad Rome, zit je
                 goed.</h2>
             <p>Aparthotel Adagio Rome Vatican ligt in de wijk Balduina, ten noordwesten van het historische centrum van
                 Rome.</p>
