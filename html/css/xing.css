@@ -4,6 +4,7 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+/* Styling van de familie pagina */
 .naamgeving {
     color: #062683;
     display: flex;
@@ -17,10 +18,13 @@ body {
     padding-top: 30px;
 }
 
+/* De ruimte waar de vakantie opties in zitten */
 .vakantie-blok {
     display: flex;
     flex-direction: row;
-    background-color: #FEFAEF;
+    border: 2px solid #062683;
+    border-radius: 10px;
+    box-shadow: 0 0 5px #062683;
     padding: 20px;
     width: 900px;
     gap: 20px;
@@ -35,6 +39,7 @@ p {
     margin: 0;
 }
 
+/* de link die doorverwijst naar de vakanties */
 .meer-info {
     background: none;
     border: none;
@@ -57,6 +62,50 @@ p {
     max-width: 100%;
     max-height: 100%;
     object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling voor de over ons pagina */
+#over-ons {
+    color: #062683;
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+}
+
+/* De ruimte waar de tekst in zitten */
+#over-ons-blok {
+    display: flex;
+    flex-direction: row;
+    border: 2px solid #062683;
+    border-radius: 10px;
+    box-shadow: 0 0 5px #062683;
+    padding: 20px;
+    width: 900px;
+    gap: 20px;
+}
+
+#over-ons-inhoud {
+    flex: 1;
+    gap: 30px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.vakantie-familie {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 10px;
+}
+
+.vakantie-familie img {
+    width: 330px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
 }
 
 
