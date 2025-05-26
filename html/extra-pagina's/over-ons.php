@@ -13,6 +13,9 @@
     <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
 </head>
 <body>
+<header>
+    <?php require_once("../components/header.php") ?>
+</header>
 <div>
     <div class="naamgeving">
         <h1>Over ons pagina</h1>
@@ -49,5 +52,8 @@
         </div>
     </div>
 </div>
+<footer>
+    <?php require_once("../components/footer.php") ?>
+</footer>
 </body>
 </html>
