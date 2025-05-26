@@ -22,10 +22,12 @@
             <h1>Voya Beach Resort</h1>
             <h2>In het Bulgaarse Sveti Vlas ligt het luxe Excellent hotel Voya Beach Resort.
                 Jong of oud, je komt de dagen heerlijk door.</h2>
-            <li>Stijlvolle en luxe inrichting</li>
-            <li>Culinaire verwennerij</li>
-            <li>Voor iedere leeftijd iets te doen</li>
-            <li>Maar liefst 5 glijbanen</li>
+            <ul>
+                <li>Stijlvolle en luxe inrichting</li>
+                <li>Culinaire verwennerij</li>
+                <li>Voor iedere leeftijd iets te doen</li>
+                <li>Maar liefst 5 glijbanen</li>
+            </ul>
             <a href="https://www.corendon.nl/bulgarije/zwarte-zee/sunny-beach/voya-beach-resort" class="meer-info">meer
                 informatie</a>
         </div>
