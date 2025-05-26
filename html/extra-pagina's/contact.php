@@ -1,5 +1,19 @@
-<!doctype html>
-<html lang="en">
+<?php
+$melding = "";
+
+if (isset($_GET['fout'])) {
+    if ($_GET['fout'] === 'leeg') {
+        $melding = "Vul alle velden in.";
+    } elseif ($_GET['fout'] === 'database') {
+        $melding = "Opslaan in database mislukt.";
+    } else {
+        $melding = "Onjuiste aanvraag.";
+    }
+}
+?>
+
+<!DOCTYPE html>
+<html lang="nl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
@@ -14,21 +28,39 @@
 
 </head>
 <body>
-<header>
-    <?php require_once("../components/header.php") ?>
-</header>
-<main>
-     <p>Stuur ons een E-Mail als je nog vragen hebt</p>
-    <form class="contact-form" action="contact.php" method="post">
-        <input type="text" name="name" placeholder="Naam">
-        <input type="text" name="mail" placeholder="Jouw mail">
-        <input type="text" name="subject" placeholder="Onderwerp">
-        <textarea name="message" placeholder="Bericht"></textarea>
-        <button type="Submit" name="Submit">Verstuur</button>
-    </form>
-</main>
-<footer>
-    <?php require_once("../components/footer.php") ?>
-</footer>
-<!-- test -->
+
+<header><?php require_once'../components/header.php'?></header>
+
+<div class="contact-container">
+    <div class="contact-box">
+        <h2 class="contact-title">Contacteer ons</h2>
+
+        <?php if (!empty($melding)): ?>
+            <div class="contact-melding"><?= $melding ?></div>
+        <?php endif; ?>
+
+        <form action="../components/verwerk.php" method="post" class="contact-form">
+            <div class="form-group">
+                <label for="naam">Naam:</label>
+                <input type="text" name="naam" id="naam" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">E-mailadres:</label>
+                <input type="email" name="email" id="email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="bericht">Bericht:</label>
+                <textarea name="bericht" id="bericht" required></textarea>
+            </div>
+
+            <button type="submit" class="contact-button">Verstuur</button>
+        </form>
+    </div>
+</div>
+
+<footer><?php require_once'../components/footer.php'?></footer>
+
 </body>
+</html>
