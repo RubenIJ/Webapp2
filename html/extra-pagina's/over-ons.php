@@ -43,7 +43,7 @@
                         en verwachtingen.</p>
                     <p>Of je nu op zoek bent naar een tropische bestemming of een gezellige stedentrip,</p>
                     <p>wij zorgen ervoor dat je altijd met een glimlach op reis gaat.</p>
-                    <p>Vibevoyage maakt reizen veilig, voordelig en bovenal gemakkelijk!</p>
+                    <p>Vibevoyage maakt reizen veilig, betrouwbaar, voordelig en bovenal gemakkelijk!</p>
                 </div>
             </div>
         </div>

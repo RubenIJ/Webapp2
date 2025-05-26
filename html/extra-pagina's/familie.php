@@ -48,7 +48,7 @@
     <div class="vakantie-blok">
         <div class="vakantie-inhoud">
             <h1>AP Cabanas Beach & Nature</h1>
-            <h2>Op zoek naar een luxe uitvalbasis in de Portugese Algarve?
+            <h2>Op zoek naar een luxe uitval basis in de Portugese Algarve?
                 AP Cabanas Beach & Nature beschikt over o.a. een dakterras met zwembad, fitnessruimte en wellnesscentrum.</h2>
             <p>AP Cabanas Beach & Nature beschikt over meerdere zwembaden, waaronder één op het dakterras.</p>
             <p>Het uitzicht is hier prachtig! Neem een duik en relax vervolgens op een ligbedje.</p>
