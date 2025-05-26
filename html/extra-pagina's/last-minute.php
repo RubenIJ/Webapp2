@@ -16,6 +16,7 @@
 <header>
     <?php require_once("../components/header.php") ?>
 </header>
+
 <footer>
     <?php require_once("../components/footer.php") ?>
 

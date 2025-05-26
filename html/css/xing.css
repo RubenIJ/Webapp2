@@ -5,6 +5,13 @@ body {
 }
 
 /* Styling van de familie pagina */
+.naamgeving h1 {
+    margin: 0;
+    font-size: 32px;
+    color: #062683;
+    font-weight: bold;
+}
+
 .naamgeving {
     color: #062683;
     display: flex;
@@ -121,14 +128,6 @@ p {
     display: block;
     object-fit: cover;
 }
-
-.naamgeving h1 {
-    margin: 0;
-    font-size: 32px;
-    color: #062683;
-    font-weight: bold;
-}
-
 
 
 
