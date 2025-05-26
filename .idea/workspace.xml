@@ -1,7 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="6745739e-ef25-4b29-9257-e9952e0a24ce" name="Changes" comment="" />
+    <list default="true" id="6745739e-ef25-4b29-9257-e9952e0a24ce" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/css/xing.css" beforeDir="false" afterPath="$PROJECT_DIR$/html/css/xing.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/extra-pagina's/familie.php" beforeDir="false" afterPath="$PROJECT_DIR$/html/extra-pagina's/familie.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/extra-pagina's/last-minute.php" beforeDir="false" afterPath="$PROJECT_DIR$/html/extra-pagina's/last-minute.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/extra-pagina's/over-ons.php" beforeDir="false" afterPath="$PROJECT_DIR$/html/extra-pagina's/over-ons.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,21 +22,21 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "RubenIJ"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;RubenIJ&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/RubenIJ/Webapp2.git",
-    "accountId": "50e8924f-e08c-4a76-9310-f2ebd45f23fb"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/RubenIJ/Webapp2.git&quot;,
+    &quot;accountId&quot;: &quot;50e8924f-e08c-4a76-9310-f2ebd45f23fb&quot;
   }
-}]]></component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 7
-}]]></component>
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
   <component name="ProjectId" id="2wsAVjLFiiJR30zVKLkuf6O6Ypf" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -39,6 +48,7 @@
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "main",
     "last_opened_file_path": "C:/Users/rvani/OneDrive - ROC Nijmegen/Workspace/html/Webapp2",
+    "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "vue.rearranger.settings.migration": "true"
   }

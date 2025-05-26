@@ -5,6 +5,13 @@ body {
 }
 
 /* Styling van de familie pagina */
+.naamgeving h1 {
+    margin: 0;
+    font-size: 32px;
+    color: #062683;
+    font-weight: bold;
+}
+
 .naamgeving {
     color: #062683;
     display: flex;
@@ -125,26 +132,6 @@ p {
     object-fit: cover;
 }
 
-.naamgeving {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    background: rgba(255, 255, 255, 0.7); /* Semi-transparant wit */
-    backdrop-filter: blur(8px); /* Blur de achtergrond */
-    -webkit-backdrop-filter: blur(8px); /* Safari support */
-    padding: 20px 0;
-    text-align: center;
-    box-shadow: 0 -8px 20px rgba(0, 0, 0, 0.2); /* Zachtere schaduw */
-    border-top-left-radius: 10px;
-    border-top-right-radius:10px;
-    transition: all 0.3s ease;
-}
-.naamgeving h1 {
-    margin: 0;
-    font-size: 32px;
-    color: #062683;
-    font-weight: bold;
-}
 
 
 
