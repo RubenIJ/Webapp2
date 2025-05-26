@@ -61,6 +61,87 @@ main p {
 .contact-form button:hover {
     background-color: #0456a0;
 }
+/* Contactformulier */
+.contact-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 60px 20px;
+    background-color: #f4f7fb;
+}
+
+.contact-box {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+}
+
+.contact-title {
+    margin-bottom: 30px;
+    text-align: center;
+    color: #062683;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    margin-bottom: 6px;
+    color: #062683;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea {
+    padding: 12px;
+    border: 2px solid #a3cef1;
+    border-radius: 10px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+    resize: vertical;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #062683;
+    outline: none;
+}
+
+.contact-button {
+    padding: 12px;
+    background-color: #062683;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-button:hover {
+    background-color: #0456a0;
+}
+
+.contact-melding {
+    text-align: center;
+    font-weight: bold;
+    color: #062683;
+    margin-bottom: 20px;
+}
 
 /* Responsive design */
 @media (max-width: 600px) {
@@ -70,6 +151,7 @@ main p {
 
     .contact-form input, .contact-form textarea {
         font-size: 0.9rem;
+        resize: none;
     }
 
     .contact-form button {
