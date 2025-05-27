@@ -31,7 +31,7 @@ $menu = $stmt->fetchAll(PDO::FETCH_ASSOC);
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hoofdpagina</title>
+    <title>All-inclusive</title>
     <link rel="stylesheet" href="../css/styling.css">
     <link rel="stylesheet" href="../css/xing.css">
     <link rel="stylesheet" href="../css/ruben.css">
