@@ -19,9 +19,9 @@
 <div class="naamgeving">
     <h1>FAQ</h1>
 </div>
-<div class="faq">
-    <div class="faq-blok">
-        <div class="faq-inhoud">
+<div class="faq ruimte">
+    <div class="faq blok">
+        <div class="faq inhoud">
             <h1>"Heb ik een visum nodig voor mijn bestemming?"</h1>
             <p>Of je een visum nodig hebt, hangt af van het land waar je naartoe reist en je eigen nationaliteit.</p>
             <p>Voor sommige landen mag je zonder visum reizen, voor andere landen moet je eerst een visum aanvragen.</p>
@@ -30,9 +30,9 @@
         </div>
     </div>
 </div>
-<div class="faq">
-    <div class="faq-blok">
-        <div class="faq-inhoud">
+<div class="faq ruimte">
+    <div class="faq blok">
+        <div class="faq inhoud">
             <h1>"Kan ik mijn reis nog annuleren of wijzigen?"</h1>
             <p>Of je je reis nog kunt annuleren of aanpassen, hangt af van de voorwaarden van je boeking.</p>
             <p>Sommige reizen kun je gratis wijzigen of annuleren tot een bepaalde datum.</p>
@@ -42,9 +42,9 @@
         </div>
     </div>
 </div>
-<div class="faq">
-    <div class="faq-blok">
-        <div class="faq-inhoud">
+<div class="faq ruimte">
+    <div class="faq blok">
+        <div class="faq inhoud">
             <h1>"Is mijn reis inclusief bagage en transfers?"</h1>
             <p>Bij sommige reizen is de ruimbagage en de transfer van het vliegveld naar het hotel inbegrepen,</p>
             <p>maar dat is niet altijd zo. Het hangt af van de reisaanbieder en het soort vakantie.</p>
@@ -53,9 +53,9 @@
         </div>
     </div>
 </div>
-<div class="faq">
-    <div class="faq-blok">
-        <div class="faq-inhoud">
+<div class="faq ruimte">
+    <div class="faq blok">
+        <div class="faq inhoud">
             <h1>"Is het veilig op mijn vakantiebestemming?"</h1>
             <p>Wij volgen altijd het reisadvies van het Ministerie van Buitenlandse Zaken.</p>
             <p>Als er een waarschuwing is voor een bepaald land of gebied, laten we je dat direct weten.</p>
