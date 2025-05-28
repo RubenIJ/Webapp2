@@ -35,6 +35,7 @@ error_reporting(E_ALL);
             <button type="submit">Zoeken</button>
         </form>
     </div></div>
+<div class="containers">
 <div class="index-indeling">
     <div class="index-indeling-blok">
         <div class="index-image-overlay">
@@ -72,6 +73,7 @@ error_reporting(E_ALL);
             <a href="extra-pagina's/filter%20locaties/noordpool.php"> <div class="locatie-overlay">Noordpool</div></a>
         </div>
     </div>
+</div>
 </div>
 </div>
 <footer>

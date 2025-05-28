@@ -9,7 +9,7 @@
             <a href="../extra%20pagina's/vragen%20en%20contact.php">Vragen & Contact</a>
         </div>
         <div class="login-links">
-            <a href="../login/login-pagina.php">Login</a>
+            <a href="../login/login.php">Login</a>
             <a href="../login/registreer.php">Registreer</a>
         </div>
     </nav>

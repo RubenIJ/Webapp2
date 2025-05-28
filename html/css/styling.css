@@ -5,6 +5,15 @@ body {
     background-color: #f4f7fb;
     color: #062683;
 }
+.containers a:link,
+.containers a:visited {
+    color: white;
+}
+
+.containers a:hover,
+.containers a:focus {
+    color: #A3CEF1;
+}
 
 /* Header */
 header {
