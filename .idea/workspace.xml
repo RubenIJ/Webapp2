@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6745739e-ef25-4b29-9257-e9952e0a24ce" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/html/css/xing.css" beforeDir="false" afterPath="$PROJECT_DIR$/html/css/xing.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/extra-pagina's/last-minute.php" beforeDir="false" afterPath="$PROJECT_DIR$/html/extra-pagina's/last-minute.php" afterDir="false" />
+    <list default="true" id="6745739e-ef25-4b29-9257-e9952e0a24ce" name="Changes" comment="dingen aangepast">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,6 +16,11 @@
     <execution />
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="familie-over-ons" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
@@ -25,12 +29,12 @@
     &quot;assignee&quot;: &quot;RubenIJ&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/RubenIJ/Webapp2.git&quot;,
-    &quot;accountId&quot;: &quot;50e8924f-e08c-4a76-9310-f2ebd45f23fb&quot;
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/RubenIJ/Webapp2.git",
+    "accountId": "f6a0822c-089a-47e8-87be-edff1040b1cf"
   }
-}</component>
+}]]></component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 7
 }</component>
@@ -43,8 +47,10 @@
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "familie-over-ons",
+    "git-widget-placeholder": "main",
     "last_opened_file_path": "C:/Users/rvani/OneDrive - ROC Nijmegen/Workspace/html/Webapp2",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "vue.rearranger.settings.migration": "true"
@@ -67,10 +73,24 @@
       <option name="presentableId" value="Default" />
       <updated>1746819932198</updated>
       <workItem from="1746819933362" duration="15000" />
+      <workItem from="1748336817337" duration="602000" />
     </task>
+    <task id="LOCAL-00001" summary="dingen aangepast">
+      <option name="closed" value="true" />
+      <created>1748266900780</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1748266900780</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="dingen aangepast" />
+    <option name="LAST_COMMIT_MESSAGE" value="dingen aangepast" />
   </component>
 </project>
