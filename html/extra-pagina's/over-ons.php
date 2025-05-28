@@ -20,8 +20,8 @@
     <div class="naamgeving">
         <h1>Over ons pagina</h1>
     </div>
-    <div id="over-ons">
-        <div id="over-ons-blok">
+    <div class="over-ons ruimte">
+        <div class="over-ons blok">
             <div id="over-ons-inhoud">
                 <div class="vakantie-familie">
                     <img src="../fotos/vakantie-familie.png" alt="Vakantie familie">

@@ -19,7 +19,16 @@ body {
     padding: 10px;
 }
 
-.vakanties {
+.beleid-inhoud {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 5px;
+}
+
+
+.ruimte {
     color: #062683;
     display: flex;
     justify-content: center;
@@ -27,7 +36,7 @@ body {
 }
 
 /* De ruimte waar de vakantie opties in zitten */
-.vakantie-blok {
+.blok {
     display: flex;
     flex-direction: row;
     border: 2px solid #062683;
@@ -38,7 +47,7 @@ body {
     gap: 20px;
 }
 
-.vakantie-inhoud {
+.inhoud {
     flex: 1;
 }
 
@@ -74,25 +83,6 @@ p {
 }
 
 /* Styling voor de over ons pagina */
-#over-ons {
-    color: #062683;
-    display: flex;
-    justify-content: center;
-    padding-top: 30px;
-}
-
-/* De ruimte waar de tekst in zitten */
-#over-ons-blok {
-    display: flex;
-    flex-direction: row;
-    border: 2px solid #062683;
-    border-radius: 10px;
-    box-shadow: 0 0 5px #062683;
-    padding: 20px;
-    width: 900px;
-    gap: 20px;
-}
-
 #over-ons-inhoud {
     flex: 1;
     gap: 30px;
@@ -128,33 +118,6 @@ p {
     display: block;
     object-fit: cover;
 }
-
-.faq {
-    color: #062683;
-    display: flex;
-    justify-content: center;
-    padding-top: 30px;
-}
-
-/* De ruimte waar de faq in zitten */
-.faq-blok {
-    display: flex;
-    flex-direction: row;
-    border: 2px solid #062683;
-    border-radius: 10px;
-    box-shadow: 0 0 5px #062683;
-    padding: 20px;
-    width: 900px;
-    gap: 20px;
-}
-
-.faq-inhoud {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
 
 
 
