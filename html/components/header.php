@@ -4,9 +4,11 @@
             <div class="logo">
                 <a href="../index.php"><img src="../fotos/logo.png" alt="Logo"></a>
             </div>
-            <a href="../extra%20pagina's/ons%20aanbod.php">Ons Aanbod</a>
-            <a href="../extra%20pagina's/last%20minute.php">Last Minute</a>
-            <a href="../extra%20pagina's/vragen%20en%20contact.php">Vragen & Contact</a>
+            <a href="../extra-pagina's/ons-aanbod.php">Ons Aanbod</a>
+            <a href="../extra-pagina's/last-minute.php">Last Minute</a>
+            <a href="../extra-pagina's/vragen-en-contact.php">Vragen & Contact</a>
+            <a href="../booking/booking.php">Booking</a>
+
         </div>
         <div class="login-links">
             <a href="../login/login.php">Login</a>
