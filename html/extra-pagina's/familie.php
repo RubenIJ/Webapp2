@@ -19,9 +19,9 @@
 <div class="naamgeving">
     <h1>Familie vakanties</h1>
 </div>
-<div class="vakanties">
-    <div class="vakantie-blok">
-        <div class="vakantie-inhoud">
+<div class="vakantie ruimte">
+    <div class="vakantie blok">
+        <div class="vakantie inhoud">
             <h1>Voya Beach Resort</h1>
             <h2>In het Bulgaarse Sveti Vlas ligt het luxe Excellent hotel Voya Beach Resort.
                 Jong of oud, je komt de dagen heerlijk door.</h2>
@@ -37,9 +37,9 @@
         </div>
     </div>
 </div>
-<div class="vakanties">
-    <div class="vakantie-blok">
-        <div class="vakantie-inhoud">
+<div class="vakantie ruimte">
+    <div class="vakantie blok">
+        <div class="vakantie inhoud">
             <h1>Aparthotel Adagio Rome Vatican</h1>
             <h2>
                 Bij Aparthotel Adagio Rome Vatican, net buiten het centrum van de Italiaanse stad Rome, zit je
@@ -55,9 +55,9 @@
         </div>
     </div>
 </div>
-<div class="vakanties">
-    <div class="vakantie-blok">
-        <div class="vakantie-inhoud">
+<div class="vakantie ruimte">
+    <div class="vakantie blok">
+        <div class="vakantie inhoud">
             <h1>AP Cabanas Beach & Nature</h1>
             <h2>Op zoek naar een luxe uitval basis in de Portugese Algarve?
                 AP Cabanas Beach & Nature beschikt over o.a. een dakterras met zwembad, fitnessruimte en
@@ -76,3 +76,4 @@
 </footer>
 </body>
 </html>
+
