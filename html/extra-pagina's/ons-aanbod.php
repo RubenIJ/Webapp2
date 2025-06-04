@@ -50,12 +50,14 @@ $menu = $stmt->fetchAll(PDO::FETCH_ASSOC);
         <button type="submit" name="search">Zoeken</button>
     </form>
 
-
-
-
     <?php if (!empty($menu)): ?>
-        <ul>
+        <div id="vakantie-blok">
             <?php foreach ($menu as $item): ?>
+                <div id="vakanties">
+                    <h3><?= htmlspecialchars(ucfirst($item['locatie'])) ?></h3>
+                    <p><strong>Tags:</strong> <?= htmlspecialchars($item['tags']) ?></p>
+                    <p><strong>Mensen:</strong> <?= htmlspecialchars($item['prijs']) ?></p>
+                </div>
                 <li>
                     <strong><?= htmlspecialchars(ucfirst($item['locatie'])) ?></strong> - |
                     <em><?= htmlspecialchars($item['tags']) ?></em>
@@ -63,10 +65,11 @@ $menu = $stmt->fetchAll(PDO::FETCH_ASSOC);
                     | Prijs: €<?= htmlspecialchars($item['prijs']) ?>
                 </li>
             <?php endforeach; ?>
-        </ul>
+        </div>
     <?php else: ?>
         <p>Geen resultaten gevonden.</p>
     <?php endif; ?>
+
 </main>
 
 <footer>
