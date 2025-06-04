@@ -54,18 +54,19 @@ $menu = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
 
     <?php if (!empty($menu)): ?>
-        <ul>
+        <div id="vakantie-blok">
             <?php foreach ($menu as $item): ?>
-                <li>
-                    <strong><?= htmlspecialchars(ucfirst($item['land'])) ?></strong> - |
-                    <em><?= htmlspecialchars($item['tags']) ?></em> |
-                    Mensen: <?= htmlspecialchars($item['mensen']) ?>
-                </li>
+                <div id="vakanties">
+                    <h3><?= htmlspecialchars(ucfirst($item['locatie'])) ?></h3>
+                    <p><strong>Tags:</strong> <?= htmlspecialchars($item['tags']) ?></p>
+                    <p><strong>Mensen:</strong> <?= htmlspecialchars($item['prijs']) ?></p>
+                </div>
             <?php endforeach; ?>
-        </ul>
+        </div>
     <?php else: ?>
         <p>Geen resultaten gevonden.</p>
     <?php endif; ?>
+
 </main>
 
 <footer>

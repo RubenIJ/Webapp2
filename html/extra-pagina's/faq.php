@@ -22,7 +22,7 @@
 <div class="faq ruimte">
     <div class="faq blok">
         <div class="faq inhoud">
-            <h1>"Heb ik een visum nodig voor mijn bestemming?"</h1>
+            <h1>"Heb ik een visum nodig voor mijn bestemming?"</h1>a
             <p>Of je een visum nodig hebt, hangt af van het land waar je naartoe reist en je eigen nationaliteit.</p>
             <p>Voor sommige landen mag je zonder visum reizen, voor andere landen moet je eerst een visum aanvragen.</p>
             <p>Wij helpen je graag met het controleren van de regels en geven je duidelijke uitleg over hoe je een visum kunt aanvragen,</p>
