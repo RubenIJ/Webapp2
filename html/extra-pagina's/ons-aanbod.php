@@ -50,9 +50,6 @@ $menu = $stmt->fetchAll(PDO::FETCH_ASSOC);
         <button type="submit" name="search">Zoeken</button>
     </form>
 
-
-
-
     <?php if (!empty($menu)): ?>
         <div id="vakantie-blok">
             <?php foreach ($menu as $item): ?>
