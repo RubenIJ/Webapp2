@@ -5,6 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6745739e-ef25-4b29-9257-e9952e0a24ce" name="Changes" comment="" />
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
     <list default="true" id="6745739e-ef25-4b29-9257-e9952e0a24ce" name="Changes" comment="nieuwe pagina, spel fouten eruit gehaald">
       <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
@@ -12,6 +14,10 @@
       <change beforePath="$PROJECT_DIR$/html/extra-pagina's/all-inclusive.php" beforeDir="false" afterPath="$PROJECT_DIR$/html/extra-pagina's/all-inclusive.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/html/extra-pagina's/ons-aanbod.php" beforeDir="false" afterPath="$PROJECT_DIR$/html/extra-pagina's/ons-aanbod.php" afterDir="false" />
     </list>
+=======
+>>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -61,6 +67,8 @@
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
   }
 }</component>
   <component name="PropertiesComponent"><![CDATA[{
@@ -74,8 +82,12 @@
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "vue.rearranger.settings.migration": "true"
+=======
+>>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
   }
-}]]></component>
+}</component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -93,7 +105,7 @@
       <option name="presentableId" value="Default" />
       <updated>1746819932198</updated>
       <workItem from="1746819933362" duration="15000" />
-      <workItem from="1749027644896" duration="2239000" />
+      <workItem from="1749027029688" duration="2349000" />
     </task>
     <servers />
   </component>
