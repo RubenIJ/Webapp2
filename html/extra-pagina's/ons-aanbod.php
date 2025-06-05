@@ -58,18 +58,12 @@ $menu = $stmt->fetchAll(PDO::FETCH_ASSOC);
                     <p><strong>Tags:</strong> <?= htmlspecialchars($item['tags']) ?></p>
                     <p><strong>Mensen:</strong> <?= htmlspecialchars($item['prijs']) ?></p>
                 </div>
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
                 <li>
                     <strong><?= htmlspecialchars(ucfirst($item['locatie'])) ?></strong> - |
                     <em><?= htmlspecialchars($item['tags']) ?></em>
                    | Soort:  <?= htmlspecialchars($item['soort']) ?>
                     | Prijs: €<?= htmlspecialchars($item['prijs']) ?>
                 </li>
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
             <?php endforeach; ?>
         </div>
     <?php else: ?>
