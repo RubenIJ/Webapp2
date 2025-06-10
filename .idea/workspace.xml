@@ -4,16 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-<<<<<<< Updated upstream
-    <list default="true" id="6745739e-ef25-4b29-9257-e9952e0a24ce" name="Changes" comment="nieuwe pagina, spel fouten eruit gehaald">
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-=======
-    <list default="true" id="548809f3-abba-4274-b68d-3c1720ee0ee4" name="Changes" comment="">
->>>>>>> Stashed changes
+
+    <list default="true" id="6745739e-ef25-4b29-9257-e9952e0a24ce" name="Changes" comment="" />
+
+
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/html/css/xing.css" beforeDir="false" afterPath="$PROJECT_DIR$/html/css/xing.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/html/extra-pagina's/faq.php" beforeDir="false" afterPath="$PROJECT_DIR$/html/extra-pagina's/faq.php" afterDir="false" />
     </list>
+
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -30,7 +29,6 @@
     "state": "OPEN",
     "assignee": "xingmyg"
   }
-<<<<<<< Updated upstream
 }</component>
   <component name="GithubProjectSettings">
     <option name="branchProtectionPatterns">
@@ -43,13 +41,7 @@
   &quot;selectedUrlAndAccountId&quot;: {
     &quot;url&quot;: &quot;https://github.com/RubenIJ/Webapp2.git&quot;,
     &quot;accountId&quot;: &quot;50e8924f-e08c-4a76-9310-f2ebd45f23fb&quot;
-=======
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/RubenIJ/Webapp2.git",
-    "accountId": "f6a0822c-089a-47e8-87be-edff1040b1cf"
->>>>>>> Stashed changes
+
   }
 }]]></component>
   <component name="ProjectColorInfo"><![CDATA[{
@@ -60,6 +52,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;#24 on ons-aanbod&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/rvani/OneDrive - ROC Nijmegen/Workspace/html/Webapp2&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+
+}</component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -71,8 +76,9 @@
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "vue.rearranger.settings.migration": "true"
+
   }
-}]]></component>
+}</component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -88,15 +94,11 @@
       <created>1749544355079</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-<<<<<<< Updated upstream
       <updated>1746819932198</updated>
       <workItem from="1746819933362" duration="15000" />
-      <workItem from="1749027644896" duration="2239000" />
-=======
-      <updated>1749544355079</updated>
-      <workItem from="1749544357237" duration="2913000" />
->>>>>>> Stashed changes
-    </task>
+
+      <workItem from="1749027029688" duration="2349000" />
+     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
