@@ -15,12 +15,12 @@ try {
 $search = '';
 if (isset($_POST['search'])) {
     $search = htmlspecialchars($_POST['query']);
-    $sql = "SELECT * FROM plaatsen WHERE locatie LIKE :search OR soort LIKE :search OR tags LIKE :search";
+    $sql = "SELECT * FROM plaatsen WHERE land LIKE :search OR soort LIKE :search OR tags LIKE :search";
     $stmt = $conn->prepare($sql);
     $stmt->bindValue(':search', '%' . $search . '%');
     $stmt->execute();
 } else {
-    $sql = "SELECT * FROM plaatsen ORDER BY locatie ASC";
+    $sql = "SELECT * FROM plaatsen ORDER BY land ASC";
     $stmt = $conn->query($sql);
 }
 
@@ -46,7 +46,7 @@ $menu = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
 <main class="allincl-content" id="locatie-allincl">
     <form method="POST">
-        <input type="text" name="query" placeholder="Zoek locatie" value="<?= htmlspecialchars($search) ?>">
+        <input type="text" name="query" placeholder="Zoek land, soort of tags" value="<?= htmlspecialchars($search) ?>">
         <button type="submit" name="search">Zoeken</button>
     </form>
 

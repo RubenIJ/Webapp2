@@ -527,3 +527,221 @@ header {
     color: #062683;
     font-size: 14px;
 }
+
+.admin-container {
+    padding: 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.admin-contact-tabel {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.admin-contact-tabel th,
+.admin-contact-tabel td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+}
+
+.admin-contact-tabel th {
+    background-color: #f2f2f2;
+}
+
+
+/* admin voor vlucht beheer*/
+
+.admin-vlucht-container {
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.admin-vlucht-container h1 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 28px;
+    color: #062683;
+}
+
+/* Styling voor elk individueel vluchtkaartje */
+.admin-vlucht-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 20px;
+    margin-bottom: 30px;
+    background-color: #fdfdfd;
+    border: 1px solid #ddd;
+    border-radius: 16px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+.admin-vlucht-form label {
+    display: flex;
+    flex-direction: column;
+    font-weight: 500;
+    font-size: 15px;
+    color: #333;
+}
+
+.admin-vlucht-form input {
+    margin-top: 6px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 14px;
+    transition: border-color 0.2s ease-in-out;
+}
+
+.admin-vlucht-form input:focus {
+    border-color: #062683;
+    outline: none;
+}
+
+/* Knoppen */
+.admin-vlucht-form button {
+    grid-column: span 2;
+    padding: 12px 15px;
+    background-color: #062683;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 15px;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.admin-vlucht-form button:hover {
+    background-color: #041f5d;
+}
+
+.admin-vlucht-form a {
+    grid-column: span 2;
+    text-align: center;
+    display: inline-block;
+    margin-top: 10px;
+    color: #c0392b;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.admin-vlucht-form a:hover {
+    text-decoration: underline;
+}
+.vluchten-toevoegen {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 2rem 0;
+}
+
+
+/* account beheer */
+.admin-gebruikers-container {
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    font-family: 'Montserrat', sans-serif;
+}
+
+.admin-gebruikers-container h1 {
+    text-align: center;
+    margin-bottom: 40px;
+    color: #062683;
+}
+.vluchten-text{
+    text-align: center;
+}
+.admin-gebruiker-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 20px;
+    margin-bottom: 30px;
+    border: 1px solid #ddd;
+    border-radius: 16px;
+    background-color: #fdfdfd;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+.admin-gebruiker-form label {
+    display: flex;
+    flex-direction: column;
+    font-weight: 500;
+    font-size: 15px;
+    color: #333;
+}
+
+.admin-gebruiker-form input[type="text"],
+.admin-gebruiker-form input[type="email"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 14px;
+}
+
+.admin-gebruiker-form input[type="checkbox"] {
+    margin-top: 10px;
+    transform: scale(1.2);
+}
+
+.form-buttons {
+    grid-column: span 2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.verborgen {
+    display: none;
+}
+
+.form-buttons button {
+
+    padding: 10px 15px;
+    background-color: #062683;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.form-buttons button:hover {
+    background-color: #041f5d;
+}
+
+.form-buttons a {
+    color: #c0392b;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.form-buttons a:hover {
+    text-decoration: underline;
+}
+#toggleRegistreer {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #062683;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#toggleRegistreer:hover {
+    background-color: #041f5d;
+}

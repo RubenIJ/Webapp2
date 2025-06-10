@@ -63,6 +63,8 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
             </div>
             <button type="submit" class="login-button">Inloggen</button>
             <p class="login-register-link">Nog geen account? <a href="registreer.php">Registreer hier</a></p>
+            <p class="login-register-link">Wachtwoord vergeten? <a href="wachtwoord-vergeten.php">Pas hier aan</a></p>
+
         </form>
 
         <?php if (!empty($melding)): ?>

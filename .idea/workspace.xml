@@ -4,10 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
+
     <list default="true" id="6745739e-ef25-4b29-9257-e9952e0a24ce" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/html/extra-pagina's/ons-aanbod.php" beforeDir="false" afterPath="$PROJECT_DIR$/html/extra-pagina's/ons-aanbod.php" afterDir="false" />
+
+
+    <list default="true" id="6745739e-ef25-4b29-9257-e9952e0a24ce" name="Changes" comment="" />
+
+
+
     </list>
+
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -19,10 +27,10 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory">{
-  &quot;lastFilter&quot;: {
-    &quot;state&quot;: &quot;OPEN&quot;,
-    &quot;assignee&quot;: &quot;RubenIJ&quot;
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "xingmyg"
   }
 }</component>
   <component name="GithubProjectSettings">
@@ -32,6 +40,7 @@
       </list>
     </option>
   </component>
+
   <component name="GithubPullRequestsUISettings"><![CDATA[{
   "selectedUrlAndAccountId": {
     "url": "https://github.com/RubenIJ/Webapp2.git",
@@ -42,6 +51,7 @@
   &quot;associatedIndex&quot;: 7
 }</component>
   <component name="ProjectId" id="2wsAVjLFiiJR30zVKLkuf6O6Ypf" />
+
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -57,8 +67,9 @@
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
-  }
+
 }</component>
+
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -70,8 +81,8 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="6745739e-ef25-4b29-9257-e9952e0a24ce" name="Changes" comment="" />
-      <created>1746819932198</created>
+      <changelist id="548809f3-abba-4274-b68d-3c1720ee0ee4" name="Changes" comment="" />
+      <created>1749544355079</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1746819932198</updated>
