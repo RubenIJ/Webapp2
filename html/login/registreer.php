@@ -9,6 +9,8 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $email = $_POST['email'] ?? '';
     $wachtwoord = $_POST['wachtwoord'] ?? '';
     $herhaal_wachtwoord = $_POST['herhaal_wachtwoord'] ?? '';
+    $vraag = $_POST['vraag'] ?? '';
+    $antwoord = $_POST['antwoord'] ?? '';
 
     // Check wachtwoorden
     if ($wachtwoord !== $herhaal_wachtwoord) {
@@ -22,18 +24,21 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
             if ($checkStmt->rowCount() > 0) {
                 $melding = "❌ Dit e-mailadres is al geregistreerd.";
             } else {
-                // Hash het wachtwoord
+                // Hash wachtwoord en antwoord
                 $hashed = password_hash($wachtwoord, PASSWORD_DEFAULT);
+                $antwoord_hash = password_hash($antwoord, PASSWORD_DEFAULT);
 
-                // Voeg gebruiker toe met admin = false
+                // Voeg gebruiker toe
                 $insertStmt = $pdo->prepare("
-                    INSERT INTO gebruikers (gebruikersnaam, email, wachtwoord, admin) 
-                    VALUES (:gebruikersnaam, :email, :wachtwoord, 0)
+                    INSERT INTO gebruikers (gebruikersnaam, email, wachtwoord, vraag, antwoord_hash, admin) 
+                    VALUES (:gebruikersnaam, :email, :wachtwoord, :vraag, :antwoord_hash, 0)
                 ");
                 $insertStmt->execute([
                     'gebruikersnaam' => $gebruikersnaam,
                     'email' => $email,
-                    'wachtwoord' => $hashed
+                    'wachtwoord' => $hashed,
+                    'vraag' => $vraag,
+                    'antwoord_hash' => $antwoord_hash
                 ]);
 
                 $melding = "✅ Registratie gelukt! <a href='login.php'>Log nu in</a>";
@@ -64,14 +69,30 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     <div class="registreer-box">
         <h2>Registreren</h2>
         <form method="POST" class="registreer-form">
-            <input type="text" name="gebruikersnaam" placeholder="Gebruikersnaam" required>
-            <input type="email" name="email" placeholder="E-mailadres" required>
-            <input type="password" name="wachtwoord" placeholder="Wachtwoord" required>
-            <input type="password" name="herhaal_wachtwoord" placeholder="Herhaal wachtwoord" required>
-            <button type="submit">Registreer</button>
-            <p class="login-register-link">Heb je al een account? <a href="login.php">Log hier in</a></p>
+            <label for="gebruikersnaam">Gebruikersnaam:</label>
+            <input type="text" name="gebruikersnaam" id="gebruikersnaam" required>
 
+            <label for="email">E-mailadres:</label>
+            <input type="email" name="email" id="email" required>
+
+            <label for="wachtwoord">Wachtwoord:</label>
+            <input type="password" name="wachtwoord" id="wachtwoord" required>
+
+            <label for="herhaal_wachtwoord">Herhaal wachtwoord:</label>
+            <input type="password" name="herhaal_wachtwoord" id="herhaal_wachtwoord" required>
+
+            <label for="vraag">Beveiligingsvraag:</label>
+            <input type="text" name="vraag" id="vraag" placeholder="Bijv. favorieten kleur" required>
+
+            <label for="antwoord">Antwoord op beveiligingsvraag:</label>
+            <input type="text" name="antwoord" id="antwoord" required>
+
+            <button type="submit">Registreer</button>
+            <p class="login-register-link">
+                Heb je al een account? <a href="login.php">Log hier in</a>
+            </p>
         </form>
+
         <?php if (!empty($melding)): ?>
             <div class="registreer-melding"><?= $melding ?></div>
         <?php endif; ?>
