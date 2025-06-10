@@ -5,12 +5,15 @@
   </component>
   <component name="ChangeListManager">
 
+    <list default="true" id="6745739e-ef25-4b29-9257-e9952e0a24ce" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/extra-pagina's/ons-aanbod.php" beforeDir="false" afterPath="$PROJECT_DIR$/html/extra-pagina's/ons-aanbod.php" afterDir="false" />
+
+
     <list default="true" id="6745739e-ef25-4b29-9257-e9952e0a24ce" name="Changes" comment="" />
 
 
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/css/xing.css" beforeDir="false" afterPath="$PROJECT_DIR$/html/css/xing.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/extra-pagina's/faq.php" beforeDir="false" afterPath="$PROJECT_DIR$/html/extra-pagina's/faq.php" afterDir="false" />
+
     </list>
 
     <option name="SHOW_DIALOG" value="false" />
@@ -37,17 +40,18 @@
       </list>
     </option>
   </component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/RubenIJ/Webapp2.git&quot;,
-    &quot;accountId&quot;: &quot;50e8924f-e08c-4a76-9310-f2ebd45f23fb&quot;
 
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/RubenIJ/Webapp2.git",
+    "accountId": "50e8924f-e08c-4a76-9310-f2ebd45f23fb"
   }
 }]]></component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 4
-}]]></component>
-  <component name="ProjectId" id="2yJEc5l4ORn0Z4YDymj9r2saDuk" />
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
+  <component name="ProjectId" id="2wsAVjLFiiJR30zVKLkuf6O6Ypf" />
+
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -56,7 +60,7 @@
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;#24 on ons-aanbod&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;last_opened_file_path&quot;: &quot;C:/Users/rvani/OneDrive - ROC Nijmegen/Workspace/html/Webapp2&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -65,20 +69,7 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
 
 }</component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "main",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
 
-  }
-}</component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -96,9 +87,9 @@
       <option name="presentableId" value="Default" />
       <updated>1746819932198</updated>
       <workItem from="1746819933362" duration="15000" />
-
-      <workItem from="1749027029688" duration="2349000" />
-     </task>
+      <workItem from="1749027644896" duration="2239000" />
+      <workItem from="1749112257803" duration="745000" />
+    </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

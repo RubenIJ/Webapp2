@@ -56,14 +56,8 @@ $menu = $stmt->fetchAll(PDO::FETCH_ASSOC);
                 <div id="vakanties">
                     <h3><?= htmlspecialchars(ucfirst($item['locatie'])) ?></h3>
                     <p><strong>Tags:</strong> <?= htmlspecialchars($item['tags']) ?></p>
-                    <p><strong>Mensen:</strong> <?= htmlspecialchars($item['prijs']) ?></p>
+                    <p><strong>Prijs: €</strong> <?= htmlspecialchars($item['prijs']) ?></p>
                 </div>
-                <li>
-                    <strong><?= htmlspecialchars(ucfirst($item['locatie'])) ?></strong> - |
-                    <em><?= htmlspecialchars($item['tags']) ?></em>
-                   | Soort:  <?= htmlspecialchars($item['soort']) ?>
-                    | Prijs: €<?= htmlspecialchars($item['prijs']) ?>
-                </li>
             <?php endforeach; ?>
         </div>
     <?php else: ?>
