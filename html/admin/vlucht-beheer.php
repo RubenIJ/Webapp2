@@ -12,19 +12,32 @@ if (isset($_GET['verwijder'])) {
 
 // Updaten
 if (isset($_POST['update'])) {
-    $id = $_POST['id'];
-    $land = $_POST['locatie'];
-    $soort = $_POST['soort'];
-    $tags = $_POST['tags'];
-    $mensen = $_POST['prijs'];
-
-    $stmt = $pdo->prepare("UPDATE plaatsen SET land=?, soort=?, tags=?, mensen=? WHERE id=?");
-    $stmt->execute([$land, $soort, $tags, $mensen, $id]);
+    $stmt = $pdo->prepare("UPDATE plaatsen SET locatie=?, soort=?, tags=?, prijs=? WHERE id=?");
+    $stmt->execute([
+        $_POST['land'],
+        $_POST['soort'],
+        $_POST['tags'],
+        $_POST['prijs'],
+        $_POST['id']
+    ]);
     header("Location: vlucht-beheer.php");
     exit;
 }
 
-// Ophalen van alle plaatsen
+// Toevoegen
+if (isset($_POST['toevoegen'])) {
+    $stmt = $pdo->prepare("INSERT INTO plaatsen (locatie, soort, tags, prijs) VALUES (?, ?, ?, ?)");
+    $stmt->execute([
+        $_POST['land'],
+        $_POST['soort'],
+        $_POST['tags'],
+        $_POST['prijs']
+    ]);
+    header("Location: vlucht-beheer.php");
+    exit;
+}
+
+// Ophalen van alle vluchten
 $stmt = $pdo->query("SELECT * FROM plaatsen ORDER BY id ASC");
 $plaatsen = $stmt->fetchAll(PDO::FETCH_ASSOC);
 ?>
@@ -45,8 +58,32 @@ $plaatsen = $stmt->fetchAll(PDO::FETCH_ASSOC);
 </header>
 
 <main class="admin-vlucht-container">
-    <h1>Vluchten beheren</h1>
+    <h1 class="vluchten-text">Vluchten beheren</h1>
 
+    <div class="vluchten-toevoegen">
+        <h2 class="vluchten-text">Nieuwe vlucht toevoegen</h2>
+        <form method="post" class="admin-vlucht-form">
+            <label>
+                Locatie:
+                <input type="text" name="land" required>
+            </label>
+            <label>
+                Soort:
+                <input type="text" name="soort" required>
+            </label>
+            <label>
+                Tags:
+                <input type="text" name="tags">
+            </label>
+            <label>
+                Prijs:
+                <input type="number" name="prijs" required>
+            </label>
+            <button type="submit" name="toevoegen">Toevoegen</button>
+        </form>
+        <hr>
+    </div>
+<h2 class="vluchten-text">Vluchten aanpassen</h2>
     <?php foreach ($plaatsen as $plaats): ?>
         <form method="post" class="admin-vlucht-form">
             <input type="hidden" name="id" value="<?= htmlspecialchars($plaats['id']) ?>">
@@ -64,7 +101,7 @@ $plaatsen = $stmt->fetchAll(PDO::FETCH_ASSOC);
             </label>
             <label>
                 Prijs:
-                <input type="number" name="mensen" value="<?= htmlspecialchars($plaats['prijs']) ?>">
+                <input type="number" name="prijs" value="<?= htmlspecialchars($plaats['prijs']) ?>">
             </label>
             <button type="submit" name="update">Bijwerken</button>
             <a href="?verwijder=<?= $plaats['id'] ?>" onclick="return confirm('Weet je zeker dat je deze vlucht wilt verwijderen?')">Verwijder</a>

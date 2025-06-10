@@ -25,6 +25,5 @@ $is_admin = $_SESSION['is_admin'] ?? false;
 <body>
 <?php require("../components/gebruiker-header.php"); ?>
 
-
 </body>
 </html>
