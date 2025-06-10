@@ -33,6 +33,10 @@ body {
     display: flex;
     justify-content: center;
     padding-top: 30px;
+    @media (max-width: 768px) {
+
+    }
+
 }
 
 /* De ruimte waar de vakantie opties in zitten */
