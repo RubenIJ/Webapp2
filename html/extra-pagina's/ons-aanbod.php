@@ -51,9 +51,9 @@ $menu = $stmt->fetchAll(PDO::FETCH_ASSOC);
     </form>
 
     <?php if (!empty($menu)): ?>
-        <div id="vakantie-blok">
+        <div class="vakantie-blok">
             <?php foreach ($menu as $item): ?>
-                <div id="vakanties">
+                <div class="vakanties">
                     <h3><?= htmlspecialchars(ucfirst($item['locatie'])) ?></h3>
                     <p><strong>Tags:</strong> <?= htmlspecialchars($item['tags']) ?></p>
                     <p><strong>Mensen:</strong> <?= htmlspecialchars($item['prijs']) ?></p>

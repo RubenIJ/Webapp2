@@ -51,19 +51,20 @@ $menu = $stmt->fetchAll(PDO::FETCH_ASSOC);
     </form>
 
     <?php if (!empty($menu)): ?>
-        <ul>
+        <div class="vakantie-blok">
             <?php foreach ($menu as $item): ?>
-                <li>
-                    <strong><?= htmlspecialchars(ucfirst($item['locatie'])) ?></strong> - |
-                    <em><?= htmlspecialchars($item['tags']) ?></em>
-                    | Soort:  <?= htmlspecialchars($item['soort']) ?>
-                    | Prijs: €<?= htmlspecialchars($item['prijs']) ?>
-                </li>
+                <div class="vakanties">
+                    <h3><?= htmlspecialchars(ucfirst($item['locatie'])) ?></h3>
+                    <p><?= htmlspecialchars($item['tags']) ?></p>
+                    <p>Soort: <?= htmlspecialchars($item['soort']) ?></p>
+                    <p>Prijs: €<?= htmlspecialchars($item['prijs']) ?></p>
+                </div>
             <?php endforeach; ?>
-        </ul>
+        </div>
     <?php else: ?>
         <p>Geen resultaten gevonden.</p>
     <?php endif; ?>
+
 </main>
 
 <footer>

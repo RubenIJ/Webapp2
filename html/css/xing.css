@@ -123,7 +123,7 @@ p {
     object-fit: cover;
 }
 
-#vakantie-blok {
+.vakantie-blok {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -131,27 +131,27 @@ p {
     margin-top: 30px;
 }
 
-#vakanties {
+.vakanties {
     background-color: #ffffff;
     border: 2px solid #062683;
     border-radius: 10px;
     padding: 20px;
     height: 200px;
     width: 250px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     transition: transform 0.2s ease;
 }
 
-#vakanties:hover {
+.vakanties:hover {
     transform: translateY(-5px);
 }
 
-#vakanties h3 {
+.vakanties h3 {
     margin-top: 0;
     color: #062683;
 }
 
-#vakanties p {
+.vakanties p {
     margin: 5px 0;
     color: #333;
 }
@@ -192,6 +192,121 @@ form button {
 form button:hover {
     background-color: #062683;
 }
+
+@media (max-width: 430px) {
+    body {
+        font-size: 13px;
+        line-height: 1.5;
+    }
+
+    .naamgeving h1 {
+        font-size: 22px;
+        text-align: center;
+    }
+
+    .beleid-inhoud {
+        padding: 0 10px;
+        gap: 3px;
+    }
+
+    .blok {
+        flex-direction: column;
+        width: 95%;
+        padding: 12px;
+        gap: 15px;
+    }
+
+    .inhoud p {
+        font-size: 13px;
+    }
+
+    .vakantie-blok {
+        flex-direction: column;
+        align-items: center;
+        padding: 0 10px;
+        gap: 15px;
+        margin-top: 20px;
+        max-width: 320px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .vakanties {
+        width: 90%;
+        max-width: 280px;
+        height: auto;
+        padding: 15px;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+        border-radius: 8px;
+    }
+
+
+    .vakanties h3 {
+        font-size: 16px;
+        margin-bottom: 4px;
+    }
+
+    .vakanties p {
+        font-size: 13px;
+        margin: 3px 0;
+    }
+
+    .vakanties:hover {
+        transform: translateY(-3px);
+    }
+
+    .vakantie-fotos {
+        width: 100%;
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    .vakantie-fotos img {
+        width: 80%;
+        max-width: 220px;
+        border-radius: 6px;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.06);
+    }
+
+    .familie-foto img {
+        width: 100%;
+        height: auto;
+    }
+
+    .vakantie-familie {
+        position: relative;
+        text-align: center;
+        padding: 0;
+        margin-top: 10px;
+    }
+
+    .vakantie-familie img {
+        width: 90%;
+        max-width: 220px;
+        height: auto;
+    }
+
+    form {
+        flex-direction: column;
+        align-items: center;
+        gap: 6px;
+        margin-top: 20px;
+    }
+
+    form input[type="text"],
+    form button {
+        width: 70%; /* minder lang */
+        font-size: 13px;
+        padding: 8px 10px;
+    }
+
+    form button {
+        font-size: 13px;
+    }
+}
+
+
+
 
 
 
