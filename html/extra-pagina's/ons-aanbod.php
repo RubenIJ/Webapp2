@@ -20,7 +20,7 @@ if (isset($_POST['search'])) {
     $stmt->bindValue(':search', '%' . $search . '%');
     $stmt->execute();
 } else {
-    $sql = "SELECT * FROM plaatsen ORDER BY land ASC";
+    $sql = "SELECT * FROM plaatsen ORDER BY locatie ASC";
     $stmt = $conn->query($sql);
 }
 

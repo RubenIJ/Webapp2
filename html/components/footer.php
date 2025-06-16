@@ -6,6 +6,7 @@
             <a href="#"><p>Reis Informatie</p></a>
             <a href="#"><p>Ons Beleid</p></a>
             <a href="../extra-pagina's/contact.php"><p>Contact</p></a>
+            <a href="../extra-pagina's/reviews.php"><p>Reviews</p></a>
         </div>
 
         <div class="footer-section">
