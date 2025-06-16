@@ -47,6 +47,14 @@ require_once '../components/config.php'; // Bevat jouw PDO-verbinding
                 </div></a>
         </div>
     </div>
+    <div class="index-indeling-blok">
+        <div class="index-image-overlay">
+            <img src="../fotos/Vijf%20Sterren%20Beoordeling.png" alt="All Inclusive">
+            <a href="contact.php"> <div class="index-overlay-text">
+                    <h2>Review beheer</h2>
+                </div></a>
+        </div>
+    </div>
 </div>
 </div>
 </body>

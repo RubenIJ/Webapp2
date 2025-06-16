@@ -1,11 +1,12 @@
 <?php
 $host = 'db';
-$db = 'vliegmaatschapij';
+$db   = 'vliegmaatschapij';
 $user = 'root';
 $pass = 'rootpassword';
 $charset = 'utf8mb4';
 
 $dsn = "mysql:host=$host;dbname=$db;charset=$charset";
+
 $options = [
     PDO::ATTR_ERRMODE            => PDO::ERRMODE_EXCEPTION,
     PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,
@@ -13,8 +14,7 @@ $options = [
 ];
 
 try {
-    $pdo = new PDO($dsn, $user, $pass, $options); // BELANGRIJK: $pdo, geen $conn!
-} catch (PDOException $e) {
-    die("Verbinding mislukt: " . $e->getMessage());
+    $PDO = new PDO($dsn, $user, $pass, $options);
+} catch (\PDOException $e) {
+    throw new \PDOException($e->getMessage(), (int)$e->getCode());
 }
-?>

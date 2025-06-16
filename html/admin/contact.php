@@ -4,7 +4,7 @@ require_once '../components/config.php'; // Bevat jouw PDO-verbinding
 
 // Haal berichten op uit de database
 try {
-    $stmt = $pdo->prepare("SELECT * FROM contact_berichten ORDER BY verzonden_op DESC");
+    $stmt = $PDO->prepare("SELECT * FROM contact_berichten ORDER BY verzonden_op DESC");
     $stmt->execute();
     $berichten = $stmt->fetchAll(PDO::FETCH_ASSOC);
 } catch (PDOException $e) {
