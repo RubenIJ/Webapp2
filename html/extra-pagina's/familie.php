@@ -1,3 +1,5 @@
+<?php session_start();
+?>
 <!doctype html>
 <html lang="en">
 <head>
@@ -16,6 +18,10 @@
 <header>
     <?php require_once("../components/header.php") ?>
 </header>
+<div class="header-foto">
+
+    <img src="../fotos/familie-page-foto.jpg" alt="">
+</div>
 <div class="naamgeving">
     <h1>Familie vakanties</h1>
 </div>

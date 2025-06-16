@@ -2,7 +2,7 @@
 ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
-
+session_start()
 ?>
 <!doctype html>
 <html lang="en">
@@ -28,13 +28,15 @@ error_reporting(E_ALL);
 </div>
 <div class="index-form">
     <div class="index-formsearch">
-        <form action="">
-            <input type="text" placeholder="Waar wil je naartoe?">
-            <input type="text" placeholder="Wanneer vertrek je?">
-            <input type="text" placeholder="Aantal personen">
-            <button type="submit">Zoeken</button>
-        </form>
-    </div></div>
+<form method="GET" action="booking/zoek-pagina.php">
+    <input type="text" name="bestemming" placeholder="Waar wil je naartoe?" required>
+    <input type="text" name="datum" placeholder="Wanneer vertrek je?">
+    <input type="text" name="datum" placeholder="Wanneer kom je terug?">
+    <input type="number" name="personen" placeholder="Aantal personen" min="1">
+    <button type="submit">Zoeken</button>
+</form>
+    </div>
+</div>
 <div class="containers">
 <div class="index-indeling">
     <div class="index-indeling-blok">

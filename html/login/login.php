@@ -9,14 +9,15 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $wachtwoord = $_POST['wachtwoord'] ?? '';
 
     try {
-        $stmt = $pdo->prepare("SELECT * FROM gebruikers WHERE email = :email");
+        $stmt = $PDO->prepare("SELECT * FROM gebruikers WHERE email = :email");
         $stmt->execute(['email' => $email]);
         $gebruiker = $stmt->fetch(PDO::FETCH_ASSOC);
 
         if ($gebruiker && password_verify($wachtwoord, $gebruiker['wachtwoord'])) {
             $_SESSION['gebruikersnaam'] = $gebruiker['gebruikersnaam'];
             $_SESSION['email'] = $gebruiker['email'];
-            $_SESSION['is_admin'] = $gebruiker['admin']; // Zorg dat kolom zo heet!
+            $_SESSION['is_admin'] = $gebruiker['admin'];
+            $_SESSION['gebruiker_id'] = $gebruiker['id']; // Deze toevoegen
 
             if ($gebruiker['admin']) {
                 header("Location: ../admin/admin.php");

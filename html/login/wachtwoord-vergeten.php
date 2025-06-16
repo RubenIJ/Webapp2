@@ -1,6 +1,6 @@
 <?php
 require_once '../components/config.php';
-
+session_start();
 $melding = '';
 $stap = 1;
 $vraag = '';
@@ -47,19 +47,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 }
 ?>
 
-<?php
-$antwoord = 'blauw';
-$hash = password_hash($antwoord, PASSWORD_DEFAULT);
-
-echo "Nieuwe hash voor 'blauw':<br>";
-echo $hash . "<br><br>";
-
-if (password_verify('blauw', $hash)) {
-    echo "✅ GELUKT op jouw server!";
-} else {
-    echo "❌ FAALT op jouw server!";
-}
-?>
 <!DOCTYPE html>
 <html lang="nl">
 <head>

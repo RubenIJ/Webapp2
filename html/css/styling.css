@@ -183,50 +183,51 @@ header {
     height: auto;
     object-fit: cover;
     display: block;
-}
-.index-form{
-    display: flex;
-    justify-content: center;
-    position: relative;
-    bottom: 85px;
-}
+}.index-form {
+     display: flex;
+     justify-content: center;
+     position: relative;
+     bottom: 85px;
+     padding: 0 20px;
+ }
 
 .index-formsearch {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 30px;
-    background-color: #A3CEF1;
-    border-radius: 20px;
+    width: 100%;
     max-width: 1000px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    background-color: #A3CEF1;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
 }
 
 .index-formsearch form {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
-    width: 100%;
     justify-content: center;
 }
 
-.index-formsearch input[type="text"] {
+.index-formsearch input[type="text"],
+.index-formsearch input[type="number"],
+.index-formsearch input[type="date"] {
     padding: 12px 20px;
     border: 2px solid #062683;
     border-radius: 10px;
-    outline: none;
     font-size: 1rem;
     width: 250px;
     transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    background-color: white;
+    color: #062683;
 }
 
-.index-formsearch input[type="text"]:focus {
+.index-formsearch input:focus {
     border-color: #0456a0;
-    box-shadow: 0 0 5px #0456a0;
+    box-shadow: 0 0 6px #0456a0;
+    outline: none;
 }
 
 .index-formsearch button {
-    padding: 12px 25px;
+    padding: 12px 30px;
     background-color: #062683;
     color: white;
     border: none;
@@ -234,19 +235,23 @@ header {
     font-size: 1rem;
     font-weight: bold;
     cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.2s ease;
+    transition: all 0.3s ease;
 }
 
 .index-formsearch button:hover {
     background-color: #0456a0;
     transform: scale(1.05);
-}.index-indeling {
-     display: flex;
-     justify-content: center;
-     flex-wrap: wrap; /* Voor responsiviteit op kleinere schermen */
-     gap: 5%;
-     padding: 40px 20px;
- }
+}
+
+
+
+.index-indeling {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Voor responsiviteit op kleinere schermen */
+    gap: 5%;
+    padding: 40px 20px;
+}
 
 .index-indeling-blok {
     display: flex;
@@ -744,4 +749,554 @@ header {
 
 #toggleRegistreer:hover {
     background-color: #041f5d;
+}
+
+.admin-vlucht-form textarea {
+    width: 100%;
+    min-height: 80px;
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    resize: vertical;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    box-shadow: inset 0 1px 2px rgba(0,0,0,0.05);
+    background-color: #fff;
+    transition: border-color 0.3s ease;
+}
+
+.admin-vlucht-form textarea:focus {
+    outline: none;
+    border-color: #0077ff;
+    background-color: #f9fcff;
+}
+.admin-vlucht-form label:nth-of-type(5) {
+    grid-column: 1 / -1;
+}
+
+.admin-vlucht-form textarea {
+    width: 90%;
+    min-height: 120px;
+    padding: 10px 14px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    resize: vertical;
+    background-color: #fff;
+    transition: border-color 0.3s ease;
+}
+#zoekResultaten {
+    margin-top: 20px;
+}
+
+.zoek-item {
+    padding: 10px;
+    border-radius: 10px;
+    background: #f0f4ff;
+    margin-bottom: 15px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+}
+#filterBox {
+    position: absolute;
+    top: 100px;
+    left: 30px;
+    background-color: #fff;
+    padding: 20px 25px;
+    border: 2px solid #062683;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    font-family: 'Montserrat', sans-serif;
+    z-index: 999;
+    max-width: 320px;
+    transition: all 0.3s ease;
+}
+
+#filterBox h4 {
+    margin-bottom: 10px;
+    color: #062683;
+    font-size: 18px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 5px;
+}
+
+.filter-bar-indeling {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.filter-bar-indeling label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 14px;
+    color: #333;
+    cursor: pointer;
+}
+
+.filter-bar-indeling input[type="checkbox"] {
+    margin-right: 8px;
+    accent-color: #062683;
+}
+#filterToggle {
+    background-color: #062683;
+    color: white;
+    border: none;
+    width: 100px;
+    height: 40px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.2s ease, transform 0.2s ease;
+    margin: 20px;
+}
+
+#filterToggle:hover {
+    background-color: #001f5c;
+    transform: scale(1.02);
+}
+
+#filterToggle:active {
+    transform: scale(0.98);
+}
+.knop-indeling-filter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.filter-zoek-combo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#filterToggle {
+    width: auto;
+    padding: 8px 14px;
+    height: auto;
+    font-size: 14px;
+    border-radius: 6px;
+    margin: 0;
+}
+.header-foto {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f5f5f5;
+}
+
+.header-foto img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+.zoek-pagina-terug-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.zoek-pagina-terugknop {
+    padding: 10px 20px;
+    background-color: #A3CEF1;
+    color: #062683;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    transform: translateY(0);
+}
+
+.zoek-pagina-terugknop:hover {
+    background-color: #7fb0d8;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+.profiel-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.profiel-titel {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #062683;
+}
+
+.geen-boekingen {
+    text-align: center;
+    color: #666;
+    font-size: 1.1rem;
+}
+
+.cancel-melding {
+    background-color: #ffe0e0;
+    color: #a00000;
+    padding: 12px 20px;
+    border-radius: 10px;
+    margin-bottom: 25px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    font-weight: bold;
+}
+
+.boekingen-lijst {
+    list-style: none;
+    padding: 0;
+}
+.profiel-aanpassen{
+    width: 90%;
+    height: 30px;
+    border: 2px solid #a3cef1;
+    border-radius: 10px;
+    font-size: 15px;
+    transition: border-color 1s;
+}
+
+.boeking-kaart {
+    background-color: white;
+    border: 2px solid #A3CEF1;
+    border-radius: 15px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.status-label.geannuleerd {
+    background-color: #ffefef;
+    color: #c0392b;
+    padding: 8px 12px;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    margin-top: 10px;
+    display: inline-block;
+    font-weight: bold;
+}
+
+.annuleer-btn,
+.verwijder-btn {
+    margin-top: 12px;
+    padding: 8px 14px;
+    background-color: #062683;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.2s ease;
+}
+
+.verwijder-btn {
+    background-color: #c0392b;
+}
+
+.annuleer-btn:hover {
+    background-color: #041f5d;
+}
+
+.verwijder-btn:hover {
+    background-color: #a83226;
+}
+.boeken-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    background-color: #f4f7fb;
+    padding: 40px 20px;
+}
+
+.boeken-container {
+    background-color: white;
+    border: 2px solid #A3CEF1;
+    border-radius: 20px;
+    padding: 40px;
+    width: 100%;
+    max-width: 600px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+}
+
+.boeken-titel {
+    text-align: center;
+    font-size: 1.8rem;
+    color: #062683;
+    margin-bottom: 20px;
+}
+
+.boeken-prijs {
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 30px;
+    color: #062683;
+}
+
+.boeken-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.boeken-form input,
+.boeken-form select {
+    padding: 12px;
+    border: 2px solid #A3CEF1;
+    border-radius: 10px;
+    font-size: 1rem;
+    background-color: #fff;
+    color: #062683;
+}
+
+.boeken-form input:focus {
+    outline: none;
+    border-color: #062683;
+    box-shadow: 0 0 5px #06268350;
+}
+
+.boeken-btn {
+    padding: 12px 20px;
+    background-color: #062683;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.boeken-btn:hover {
+    background-color: #041f5d;
+}
+
+.boeken-terug {
+    display: inline-block;
+    margin-top: 25px;
+    color: #062683;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.boeken-terug:hover {
+    color: #0456a0;
+}
+
+.boeken-subtitel {
+    text-align: center;
+    margin-bottom: 15px;
+    color: #062683;
+}
+
+.login-fout {
+    color: red;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.boeken-register-link {
+    text-align: center;
+    margin-top: 15px;
+}
+.profiel-form {
+    background-color: #f3f5ff;
+    padding: 20px;
+    border-radius: 10px;
+    font-family: 'Montserrat', sans-serif;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    margin-top: 10px;
+}
+
+.profiel-form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #062683;
+}
+
+.profiel-form input[type="text"],
+.profiel-form input[type="email"] {
+    width: 100%;
+    padding: 8px 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+.profiel-form button[type="submit"] {
+    background-color: #24a19c;
+    color: white;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 6px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.profiel-form button[type="submit"]:hover {
+    background-color: #1c7f7b;
+}
+
+.favorieten-filter-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.favorieten-filter-boek,
+.favorieten-filter-terug,
+.favorieten-filter-btn {
+    background-color: #062683;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.favorieten-filter-boek:hover,
+.favorieten-filter-terug:hover,
+.favorieten-filter-btn:hover {
+    background-color: #041b5e;
+}
+
+.favorieten-filter-form {
+    margin: 0;
+}
+.favoriet-actie {
+    margin-top: 5px;
+}
+
+.favoriet-btn {
+    background-color: #f39c12;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.favoriet-btn.verwijder {
+    background-color: #c0392b;
+}
+
+@media (max-width: 600px) {
+    .filter-zoek-combo {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    #filterToggle {
+        width: 100%;
+    }
+}
+
+@media (max-width: 600px) {
+    #filterBox {
+        position: static;
+        max-width: 100%;
+        margin: 0 auto;
+        box-shadow: none;
+        border: 1px solid #ccc;
+    }
+
+    .filter-bar-indeling {
+        flex-direction: column;
+    }
+}
+@media (max-width: 600px) {
+    .nav {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px;
+        height: auto;
+    }
+
+    .logo {
+        margin-bottom: 15px;
+    }
+
+    .links {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+        width: 100%;
+    }
+
+    .login-links {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+        width: 100%;
+        margin-top: 15px;
+    }
+
+    .login-links a,
+    .links a {
+        width: 100%;
+        padding: 10px;
+        text-align: left;
+    }
+
+    .login-links span {
+        margin-right: 0;
+    }
+}
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger span {
+    height: 3px;
+    width: 25px;
+    background: #062683;
+    margin: 4px 0;
+    transition: 0.4s;
+}
+
+@media (max-width: 768px) {
+    .links, .login-links {
+        display: none;
+        flex-direction: column;
+        width: 90%;
+        background-color: #A3CEF1;
+        padding: 10px 20px;
+    }
+
+    .links.active, .login-links.active {
+        display: flex;
+    }
+
+    .nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .hamburger {
+        display: flex;
+        position: absolute;
+        top: 30px;
+        right: 30px;
+    }
 }

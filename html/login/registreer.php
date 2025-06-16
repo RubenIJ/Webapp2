@@ -18,7 +18,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     } else {
         try {
             // Check of e-mail al bestaat
-            $checkStmt = $pdo->prepare("SELECT id FROM gebruikers WHERE email = :email");
+            $checkStmt = $PDO->prepare("SELECT id FROM gebruikers WHERE email = :email");
             $checkStmt->execute(['email' => $email]);
 
             if ($checkStmt->rowCount() > 0) {
@@ -29,7 +29,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
                 $antwoord_hash = password_hash($antwoord, PASSWORD_DEFAULT);
 
                 // Voeg gebruiker toe
-                $insertStmt = $pdo->prepare("
+                $insertStmt = $PDO->prepare("
                     INSERT INTO gebruikers (gebruikersnaam, email, wachtwoord, vraag, antwoord_hash, admin) 
                     VALUES (:gebruikersnaam, :email, :wachtwoord, :vraag, :antwoord_hash, 0)
                 ");
