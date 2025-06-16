@@ -11,6 +11,7 @@ if (isset($_POST['search'])) {
 } else {
     $sql = "SELECT * FROM plaatsen ORDER BY locatie ASC";
     $stmt = $PDO->query($sql);
+
 }
 
 $menu = $stmt->fetchAll(PDO::FETCH_ASSOC);
@@ -46,7 +47,7 @@ $menu = $stmt->fetchAll(PDO::FETCH_ASSOC);
 <?php require_once '../components/filter bar.php'; ?>
 
     <?php if (!empty($menu)): ?>
-        <div id="vakantie-blok">
+        <div class="vakantie-blok">
             <?php foreach ($menu as $item): ?>
                 <div id="vakanties">
                     <h3 id="kaart-locatie"><?= htmlspecialchars(ucfirst($item['locatie'])) ?></h3>
@@ -55,6 +56,7 @@ $menu = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
                     <p ><strong>Prijs: €</strong> <?= htmlspecialchars($item['prijs']) ?></p>
                     <a href="../booking/vluchtbekijken.php?id=<?= $item['id'] ?>" class="vlucht-btn">Bekijk reis</a>
+
                 </div>
 
             <?php endforeach; ?>

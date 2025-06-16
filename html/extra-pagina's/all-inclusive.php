@@ -60,6 +60,7 @@ $menu = $stmt->fetchAll(PDO::FETCH_ASSOC);
             <?php endforeach; ?>
 
 
+
         </div>
     <?php else: ?>
         <p>Geen resultaten gevonden.</p>
