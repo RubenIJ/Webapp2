@@ -4,18 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e87a323c-6190-4b4c-9f2f-888a6ca4769a" name="Changes" comment="">
-<<<<<<< Updated upstream
-      <change afterPath="$PROJECT_DIR$/html/extra-pagina's/filter-locaties/frankrijk.php" afterDir="false" />
+    <list default="true" id="6745739e-ef25-4b29-9257-e9952e0a24ce" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/html/extra-pagina's/reviews-bekijken.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/css/xing.css" beforeDir="false" afterPath="$PROJECT_DIR$/html/css/xing.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/extra-pagina's/filter locaties/frankrijk.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/extra-pagina's/filter locaties/noordpool.php" beforeDir="false" afterPath="$PROJECT_DIR$/html/extra-pagina's/filter-locaties/noordpool.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/extra-pagina's/filter locaties/spanje.php" beforeDir="false" afterPath="$PROJECT_DIR$/html/extra-pagina's/filter-locaties/spanje.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/fotos/noordpool.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/html/fotos/noordpool.jpg" afterDir="false" />
-=======
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
->>>>>>> Stashed changes
+      <change beforePath="$PROJECT_DIR$/html/css/ruben.css" beforeDir="false" afterPath="$PROJECT_DIR$/html/css/ruben.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/extra-pagina's/reviews.php" beforeDir="false" afterPath="$PROJECT_DIR$/html/extra-pagina's/reviews.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,10 +41,17 @@
     &quot;accountId&quot;: &quot;50e8924f-e08c-4a76-9310-f2ebd45f23fb&quot;
   }
 }</component>
+  <component name="GithubProjectSettings">
+    <option name="branchProtectionPatterns">
+      <list>
+        <option value="main" />
+      </list>
+    </option>
+  </component>
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
     &quot;url&quot;: &quot;https://github.com/RubenIJ/Webapp2.git&quot;,
-    &quot;accountId&quot;: &quot;f6a0822c-089a-47e8-87be-edff1040b1cf&quot;
+    &quot;accountId&quot;: &quot;50e8924f-e08c-4a76-9310-f2ebd45f23fb&quot;
   }
 }</component>
   <component name="ProjectColorInfo">{
@@ -62,35 +62,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-<<<<<<< Updated upstream
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/rvani/OneDrive - ROC Nijmegen/Workspace/html/Webapp2&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
-  }
+
 }</component>
-=======
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "main",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
-  }
-}]]></component>
->>>>>>> Stashed changes
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -102,14 +86,16 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="e87a323c-6190-4b4c-9f2f-888a6ca4769a" name="Changes" comment="" />
-      <created>1749632393688</created>
+      <changelist id="6745739e-ef25-4b29-9257-e9952e0a24ce" name="Changes" comment="" />
+      <created>1749544355079</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1749632393688</updated>
-      <workItem from="1749632395392" duration="4534000" />
-      <workItem from="1749716566846" duration="6228000" />
-      <workItem from="1750076316942" duration="1026000" />
+      <updated>1746819932198</updated>
+      <workItem from="1746819933362" duration="15000" />
+      <workItem from="1749027644896" duration="2239000" />
+      <workItem from="1749112257803" duration="745000" />
+      <workItem from="1749634816508" duration="1759000" />
+      <workItem from="1749723265835" duration="1962000" />
     </task>
     <servers />
   </component>
