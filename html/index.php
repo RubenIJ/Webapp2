@@ -14,8 +14,6 @@ session_start()
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <title>Hoofdpagina</title>
     <link rel="stylesheet" href="css/styling.css">
-    <link rel="stylesheet" href="css/xing.css">
-    <link rel="stylesheet" href="css/ruben.css">
     <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
 
 </head>
