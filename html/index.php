@@ -64,15 +64,15 @@ session_start()
     <div class="locatie-container">
         <div class="locatie-card">
             <img src="fotos/parijs.jpeg" alt="Frankrijk">
-            <a href="extra-pagina's/filter%20locaties/frankrijk.php"><div class="locatie-overlay">Frankrijk</div></a>
+            <a href="filter-locaties/frankrijk.php"><div class="locatie-overlay">Frankrijk</div></a>
           </div>
         <div class="locatie-card">
             <img src="fotos/barcelona.jpg" alt="Spanje">
-            <a href="extra-pagina's/filter%20locaties/spanje.php"> <div class="locatie-overlay">Spanje</div></a>
+            <a href="filter-locaties/spanje.php"> <div class="locatie-overlay">Spanje</div></a>
         </div>
         <div class="locatie-card">
             <img src="fotos/noordpool.jpg" alt="Noordpool">
-            <a href="extra-pagina's/filter%20locaties/noordpool.php"> <div class="locatie-overlay">Noordpool</div></a>
+            <a href="filter-locaties/noordpool.php"> <div class="locatie-overlay">Noordpool</div></a>
         </div>
     </div>
 </div>

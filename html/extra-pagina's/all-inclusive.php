@@ -22,8 +22,6 @@ $menu = $stmt->fetchAll(PDO::FETCH_ASSOC);
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>all inclusive</title>
     <link rel="stylesheet" href="../css/styling.css">
-    <link rel="stylesheet" href="../css/xing.css">
-    <link rel="stylesheet" href="../css/ruben.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
 </head>
@@ -34,7 +32,7 @@ $menu = $stmt->fetchAll(PDO::FETCH_ASSOC);
 </header>
 <div class="header-foto">
 
-<img src="../fotos/allinlcusive.jpg" alt="">
+    <img src="../fotos/allinlcusive.jpg" alt="">
 </div>
 <main class="allincl-content" id="locatie-allincl">
     <div class="knop-indeling-filter">
@@ -46,22 +44,18 @@ $menu = $stmt->fetchAll(PDO::FETCH_ASSOC);
     <?php require_once '../components/filter bar.php'; ?>
 
     <?php if (!empty($menu)): ?>
-        <div id="vakantie-blok">
+        <div class="vakantie-container" id="vakantie-blok">
             <?php foreach ($menu as $item): ?>
-                <div id="vakanties">
+                <div class="vakantie-kaart">
                     <h3 id="kaart-locatie"><?= htmlspecialchars(ucfirst($item['locatie'])) ?></h3>
                     <p id="kaart-tags"><strong>Tags:</strong> <?= htmlspecialchars($item['tags']) ?></p>
                     <p id="kaart-soort"><?= htmlspecialchars($item['soort']) ?></p>
-
-                    <p ><strong>Prijs: €</strong> <?= htmlspecialchars($item['prijs']) ?></p>
+                    <p><strong>Prijs: €</strong> <?= htmlspecialchars($item['prijs']) ?></p>
                     <a href="../booking/vluchtbekijken.php?id=<?= $item['id'] ?>" class="vlucht-btn">Bekijk reis</a>
                 </div>
-
             <?php endforeach; ?>
-
-
-
         </div>
+
     <?php else: ?>
         <p>Geen resultaten gevonden.</p>
     <?php endif; ?>

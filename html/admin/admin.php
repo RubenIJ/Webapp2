@@ -8,10 +8,8 @@ require_once '../components/config.php'; // Bevat jouw PDO-verbinding
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Inloggen</title>
+    <title>Admin</title>
     <link rel="stylesheet" href="../css/styling.css">
-    <link rel="stylesheet" href="../css/xing.css">
-    <link rel="stylesheet" href="../css/ruben.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
 </head>
@@ -50,7 +48,7 @@ require_once '../components/config.php'; // Bevat jouw PDO-verbinding
     <div class="index-indeling-blok">
         <div class="index-image-overlay">
             <img src="../fotos/Vijf%20Sterren%20Beoordeling.png" alt="All Inclusive">
-            <a href="contact.php"> <div class="index-overlay-text">
+            <a href="reviews-validator.php"> <div class="index-overlay-text">
                     <h2>Review beheer</h2>
                 </div></a>
         </div>

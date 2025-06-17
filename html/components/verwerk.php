@@ -1,5 +1,5 @@
 <?php
-require_once("configruben.php");
+require_once("config.php");
 
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $naam = htmlspecialchars(trim($_POST["naam"]));
@@ -7,12 +7,12 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $bericht = htmlspecialchars(trim($_POST["bericht"]));
 
     if (empty($naam) || empty($email) || empty($bericht)) {
-        header("Location: contact.php?fout=leeg");
+        header("Location: ../extra-pagina's/contact.php?fout=leeg");
         exit;
     }
 
     $sql = "INSERT INTO contact_berichten (naam, email, bericht) VALUES (:naam, :email, :bericht)";
-    $stmt = $pdo->prepare($sql);
+    $stmt = $PDO->prepare($sql);
     $stmt->bindParam(':naam', $naam);
     $stmt->bindParam(':email', $email);
     $stmt->bindParam(':bericht', $bericht);
@@ -22,11 +22,11 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         header("Location: bedankt.php");
         exit;
     } catch (PDOException $e) {
-        header("Location: contact.php?fout=database");
+        header("Location: ../extra-pagina's/contact.php?fout=database");
         exit;
     }
 
 } else {
-    header("Location: contact.php?fout=onjuist");
+    header("Location: ../extra-pagina's/contact.php?fout=onjuist");
     exit;
 }
