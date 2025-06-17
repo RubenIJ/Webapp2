@@ -1,12 +1,5 @@
-<<<<<<< Updated upstream
-<?php session_start();
-?>
-<?php
-
-=======
 <?php
 session_start();
->>>>>>> Stashed changes
 $melding = "";
 $success = false;
 

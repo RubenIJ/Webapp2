@@ -41,7 +41,7 @@ $menu = $stmt->fetchAll(PDO::FETCH_ASSOC);
             <button type="button" id="filterToggle">Filters</button>
         </form>
     </div>
-    <?php require_once '../components/filter bar.php'; ?>
+    <?php require_once '../components/filter-bar.php'; ?>
 
     <?php if (!empty($menu)): ?>
         <div class="vakantie-container" id="vakantie-blok">
