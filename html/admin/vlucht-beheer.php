@@ -59,7 +59,6 @@ $boekingen = $stmt->fetchAll(PDO::FETCH_ASSOC);
     <meta charset="UTF-8">
     <title>Admin Vluchtbeheer</title>
     <link rel="stylesheet" href="../css/styling.css">
-    <link rel="stylesheet" href="../css/xing.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
 </head>

@@ -20,8 +20,6 @@ $resultaten = $stmt->fetchAll(PDO::FETCH_ASSOC);
     <title>Zoekresultaten</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/styling.css">
-    <link rel="stylesheet" href="../css/xing.css">
-    <link rel="stylesheet" href="../css/ruben.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
 </head>

@@ -9,7 +9,7 @@ $email = $_POST['email'] ?? '';
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     if (isset($_POST['controleer_email'])) {
         // Stap 1: Vraag ophalen
-        $stmt = $pdo->prepare("SELECT * FROM gebruikers WHERE email = ?");
+        $stmt = $PDO->prepare("SELECT * FROM gebruikers WHERE email = ?");
         $stmt->execute([$email]);
         $gebruiker = $stmt->fetch();
 
@@ -25,7 +25,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         // Stap 2: Antwoord controleren
         $antwoord = trim($_POST['antwoord'] ?? '');
 
-        $stmt = $pdo->prepare("SELECT * FROM gebruikers WHERE email = ?");
+        $stmt = $PDO->prepare("SELECT * FROM gebruikers WHERE email = ?");
         $stmt->execute([$email]);
         $gebruiker = $stmt->fetch();
 
@@ -33,7 +33,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $token = bin2hex(random_bytes(32));
             $verloop = date("Y-m-d H:i:s", strtotime('+1 hour'));
 
-            $stmt = $pdo->prepare("UPDATE gebruikers SET reset_code = ?, reset_code_verloop = ? WHERE email = ?");
+            $stmt = $PDO->prepare("UPDATE gebruikers SET reset_code = ?, reset_code_verloop = ? WHERE email = ?");
             $stmt->execute([$token, $verloop, $email]);
 
             $link = "http://localhost:8000/login/wachtwoord-wijzigen.php?token=" . $token;
@@ -53,8 +53,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <meta charset="UTF-8">
     <title>Wachtwoord vergeten</title>
     <link rel="stylesheet" href="../css/styling.css">
-    <link rel="stylesheet" href="../css/xing.css">
-    <link rel="stylesheet" href="../css/ruben.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" />
+
 </head>
 <body>
 <header><?php require_once("../components/header.php"); ?></header>

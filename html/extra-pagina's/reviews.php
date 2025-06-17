@@ -1,7 +1,12 @@
+<<<<<<< Updated upstream
 <?php session_start();
 ?>
 <?php
 
+=======
+<?php
+session_start();
+>>>>>>> Stashed changes
 $melding = "";
 $success = false;
 
@@ -17,6 +22,28 @@ if (isset($_GET['fout'])) {
     $success = true;
 }
 ?>
+<?php
+require_once "../components/config.php";
+
+try {
+    $PDO = new PDO("mysql:host=db;dbname=vliegmaatschapij;charset=utf8mb4", "root", "rootpassword");
+    $PDO->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+} catch (PDOException $e) {
+    die("Database verbinding mislukt: " . $e->getMessage());
+}
+
+$sql = "SELECT email, beoordeling, review_text, geplaatst_op, goedgekeurd
+        FROM reviews 
+        WHERE goedgekeurd = 1 
+        ORDER BY geplaatst_op DESC";
+
+$stmt = $PDO->prepare($sql);
+$stmt->execute();
+
+$reviews = $stmt->fetchAll(PDO::FETCH_ASSOC);
+
+?>
+
 
 <!DOCTYPE html>
 <html lang="nl">
@@ -28,16 +55,16 @@ if (isset($_GET['fout'])) {
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
     <title>Laat een review achter</title>
     <link rel="stylesheet" href="../css/styling.css" />
-    <link rel="stylesheet" href="../css/xing.css" />
-    <link rel="stylesheet" href="../css/ruben.css" />
+
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" />
 </head>
 <body>
 
 <header><?php require_once '../components/header.php'; ?></header>
+<button id="toggleRegistreer"  class="locatie-toggle-knop">📍 Toon/verberg review achter laten</button>
 
-<div class="contact-container">
-    <div class="contact-box">
+<div class="contact-container"  >
+    <div class="contact-box" id="locatieBlok" style="display: block">
         <h2 class="contact-title">Laat een review achter</h2>
 
         <?php if (!empty($melding)): ?>
@@ -61,7 +88,7 @@ if (isset($_GET['fout'])) {
 
             <div class="form-group">
                 <label for="beoordeling">Beoordeling (1 t/m 5):</label>
-                <select name="beoordeling" id="beoordeling" required>
+                <select name="beoordeling" id="beoordeling" class="input-select" required>
                     <option value="">-- Kies een cijfer --</option>
                     <option value="1">1 - Slecht</option>
                     <option value="2">2</option>
@@ -71,6 +98,7 @@ if (isset($_GET['fout'])) {
                 </select>
             </div>
 
+
             <div class="form-group">
                 <label for="review">Je review:</label>
                 <textarea name="review" id="review" required></textarea>
@@ -79,9 +107,49 @@ if (isset($_GET['fout'])) {
             <button type="submit" class="contact-button">Verstuur review</button>
         </form>
     </div>
+
+
 </div>
+<?php if (count($reviews) === 0): ?>
+    <p class="geen-boekingen">Er zijn nog geen goedgekeurde reviews.</p>
+<?php else: ?>
+    <ul class="boekingen-lijst">
+        <?php foreach ($reviews as $review): ?>
+            <li class="boeking-kaart">
+                <div class="review-header">
+                    <strong><?= htmlspecialchars($review['email']) ?></strong><br>
+                    <small><?= date('d-m-Y', strtotime($review['geplaatst_op'])) ?></small>
+                </div>
+                <div class="review-beoordeling">
+                    <?php
+                    $stars = intval($review['beoordeling']);
+                    for ($i = 0; $i < 5; $i++) {
+                        echo $i < $stars
+                            ? '<i class="fas fa-star star"></i>'
+                            : '<i class="far fa-star star"></i>';
+                    }
+                    ?>
+                </div>
+                <p class="review-text"><?= nl2br(htmlspecialchars($review['review_text'])) ?></p>
+            </li>
+        <?php endforeach; ?>
+    </ul>
+<?php endif; ?>
+
+
 
 <footer><?php require_once '../components/footer.php'; ?></footer>
-
+<script>
+    document.getElementById('toggleRegistreer').addEventListener('click', function () {
+        const locatieSectie = document.getElementById('locatieBlok');
+        if (locatieSectie.style.display === 'none' || locatieSectie.style.display === '') {
+            locatieSectie.style.display = 'block';
+            this.textContent = '📍 Verberg review achter laten';
+        } else {
+            locatieSectie.style.display = 'none';
+            this.textContent = '📍 Toon review achter laten';
+        }
+    });
+</script>
 </body>
 </html>

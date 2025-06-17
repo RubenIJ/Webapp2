@@ -8,7 +8,7 @@ if (empty($token)) {
 }
 
 // Stap 1: Haal gebruiker op met geldige token
-$stmt = $pdo->prepare("SELECT * FROM gebruikers WHERE reset_code = ? AND reset_code_verloop > NOW()");
+$stmt = $PDO->prepare("SELECT * FROM gebruikers WHERE reset_code = ? AND reset_code_verloop > NOW()");
 $stmt->execute([$token]);
 $gebruiker = $stmt->fetch();
 
@@ -28,7 +28,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['verander_wachtwoord']
     } else {
         // Update wachtwoord
         $hash = password_hash($nieuw, PASSWORD_DEFAULT);
-        $stmt = $pdo->prepare("UPDATE gebruikers SET wachtwoord = ?, reset_code = NULL, reset_code_verloop = NULL WHERE id = ?");
+        $stmt = $PDO->prepare("UPDATE gebruikers SET wachtwoord = ?, reset_code = NULL, reset_code_verloop = NULL WHERE id = ?");
         $stmt->execute([$hash, $gebruiker['id']]);
         $melding = "✅ Je wachtwoord is succesvol gewijzigd. Je kunt nu <a href='login.php'>inloggen</a>.";
     }
@@ -41,6 +41,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['verander_wachtwoord']
     <meta charset="UTF-8">
     <title>Wachtwoord Reset</title>
     <link rel="stylesheet" href="../css/styling.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" />
+
 </head>
 <body>
 
