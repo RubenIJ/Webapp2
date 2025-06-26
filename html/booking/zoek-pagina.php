@@ -51,7 +51,7 @@ $resultaten = $stmt->fetchAll(PDO::FETCH_ASSOC);
                 naar vorige pagina</button>
         </div>
 
-    <?php else: ?>
+     <?php else: ?>
         <p style="text-align: center;">Geen vluchten gevonden.</p>
     <?php endif; ?>
 </main>

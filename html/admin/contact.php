@@ -1,8 +1,7 @@
 <?php
 session_start();
-require_once '../components/config.php'; // Bevat jouw PDO-verbinding
+require_once '../components/config.php';
 
-// Haal berichten op uit de database
 try {
     $stmt = $PDO->prepare("SELECT * FROM contact_berichten ORDER BY verzonden_op DESC");
     $stmt->execute();

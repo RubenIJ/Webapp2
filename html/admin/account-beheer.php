@@ -24,9 +24,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && !isset($_POST['update'])) {
     $admin = isset($_POST['admin']) ? 1 : 0;
 
     if (!$gebruikersnaam || !$email || !$wachtwoord || !$herhaal || !$vraag || !$antwoord) {
-        $melding = "❌ Vul alle velden in.";
+        $melding = "vul de missende velden in";
     } elseif ($wachtwoord !== $herhaal) {
-        $melding = "❌ Wachtwoorden komen niet overeen.";
+        $melding = "wachtwoord komt niet overeen.";
     } else {
         try {
             // Check of e-mail al bestaat
@@ -34,7 +34,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && !isset($_POST['update'])) {
             $checkStmt->execute(['email' => $email]);
 
             if ($checkStmt->rowCount() > 0) {
-                $melding = "❌ Dit e-mailadres is al geregistreerd.";
+                $melding = "deze email is al ingebruik";
             } else {
                 $hash = password_hash($wachtwoord, PASSWORD_DEFAULT);
                 $antwoord_hash = password_hash($antwoord, PASSWORD_DEFAULT);
@@ -42,10 +42,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && !isset($_POST['update'])) {
                 $stmt = $PDO->prepare("INSERT INTO gebruikers (gebruikersnaam, email, wachtwoord, vraag, antwoord_hash, admin) VALUES (?, ?, ?, ?, ?, ?)");
                 $stmt->execute([$gebruikersnaam, $email, $hash, $vraag, $antwoord_hash, $admin]);
 
-                $melding = "✅ Gebruiker succesvol toegevoegd.";
+                $melding = "succes!!";
             }
         } catch (PDOException $e) {
-            $melding = "⚠️ Fout bij registratie: " . $e->getMessage();
+            $melding = "fout bij regestratie" . $e->getMessage();
         }
     }
 }

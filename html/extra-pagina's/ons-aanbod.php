@@ -42,7 +42,7 @@ $menu = $stmt->fetchAll(PDO::FETCH_ASSOC);
             <button type="button" id="filterToggle">Filters</button>
         </form>
     </div>
-    <?php require_once '../components/filter bar.php'; ?>
+    <?php require_once '../components/filter-bar.php'; ?>
 
     <?php if (!empty($menu)): ?><div class="vakantie-container" id="vakantie-blok">
         <?php foreach ($menu as $item): ?>
@@ -67,7 +67,7 @@ $menu = $stmt->fetchAll(PDO::FETCH_ASSOC);
 </footer>
 <script>
     const zoekInput = document.getElementById('zoekQuery');
-    const kaarten = document.querySelectorAll('#vakanties');
+    const kaarten = document.querySelectorAll('.vakantie-kaart');
 
     zoekInput.addEventListener('input', function () {
         const zoekterm = this.value.toLowerCase();

@@ -96,7 +96,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['login'])) {
 
                 <button type="submit" name="login" class="boeken-btn">Inloggen</button>
             </form>
-            <p class="boeken-register-link">Heb je nog geen account? <a href="../auth/register.php">Registreer hier</a>.</p>
+            <p class="boeken-register-link">Heb je nog geen account? <a href="../login/registreer.php">Registreer hier</a>.</p>
         <?php endif; ?>
 
         <a href="javascript:history.back()" class="boeken-terug">← Terug naar vorige pagina</a>
